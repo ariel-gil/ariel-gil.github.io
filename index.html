@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #f9f9f9;
+            --bg-color: white;
             --container-bg: white;
             --text-color: #333;
             --heading-color: #2c3e50;
@@ -21,7 +21,7 @@
         }
         
         [data-theme="dark"] {
-            --bg-color: #1a1a1a;
+            --bg-color: #2d2d2d;
             --container-bg: #2d2d2d;
             --text-color: #e0e0e0;
             --heading-color: #f0f0f0;
@@ -31,23 +31,22 @@
             --box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         
-        body {
-            font-family: 'Vollkorn', serif;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 2rem;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            transition: all 0.3s ease;
-        }
-        
-        .container {
-            background-color: var(--container-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: var(--box-shadow);
-        }
+       html, body {
+        font-family: 'Vollkorn', serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+        background-color: var(--container-bg); /* Same as container background */
+        transition: all 0.3s ease;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
         
         .theme-toggle {
             position: fixed;
