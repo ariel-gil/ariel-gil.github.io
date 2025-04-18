@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ariel Gil - AI Safety Researcher focusing on AI Risk management, standards and policy.">
     <title>Ariel Gil - AI Safety Researcher</title>
     <!-- Add Vollkorn font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -142,10 +143,23 @@
         ul.publications a:hover {
             text-decoration: underline;
         }
+
+        /* Add media query for small screens */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
         <span id="theme-icon">🌙</span> 
         <span id="theme-text">Dark Mode</span>
     </button>
@@ -158,9 +172,9 @@
                 <h2>AI Safety Researcher</h2>
                 <p>Co-Lead at AI Standards Lab</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a>
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ariel-gil/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=jyyDF6YAAAAJ" target="_blank">Google Scholar</a>
+                    <a href="https://github.com/ariel-gil" target="_blank">GitHub</a>
                 </div>
             </div>
         </header>
@@ -175,27 +189,28 @@
             
             <div class="project">
                 <h4>AI Standards Lab</h4>
-                <p>Co-leading an initiative focused on developing standards and best practices for the safe deployment of AI systems. Our work aims to bridge technical research with practical implementation guidelines.</p>
+                <p>Co-leading a nonprofit focused on developing standards and risk management frameworks for the safe deployment of AI systems. Our work aims to bridge technical research with practical implementation guidelines. So far, we focused on CEN-CENELEC JTC21 standards for the "High Risk" systems in the AI Act, as well as the Codes of Practice. </p>
             </div>
             
             <div class="project">
-                <h4>Discernment</h4>
-                <p>A research project exploring how AI systems can better identify and respond to potentially harmful instructions. This work focuses on enhancing AI safety through improved decision-making capabilities.</p>
+                <h4>Discernment/Scalable oversight</h4>
+                <p>I am writing a paper exploring the "discernment problem" - essentially scalable oversight failures specifically when using AI systems to automate alignment research. I think that there's a chance we will hit this bottleneck soon, and it might make iterative alignment strategies less likely to work. I am trying to take different angles to it from the governance side - maybe as a policy brief, or maybe to give a better sense of the issue and what we can do about it. 
+                    
+                See a <a href="https://docs.google.com/document/d/1CAVyHy7-oNOCrJzLlwaJ_rJS1pIGkK3TDUk3CY9NQNw/edit?pli=1&tab=t.0#heading=h.gqb01d2ihge" target="_blank">governance working paper</a> and a <a href="https://docs.google.com/document/d/1C980KdYo1C5ExsGj5ws9RVvrvUBxdgayqy8ujE25_rk/edit?pli=1&tab=t.0#heading=h.kc4qd7rv92ah" target="_blank">technical research proposal</a>. </p> <!-- added hyperlink -->
             </div>
             
             <div class="project">
                 <h4>Short Timelines Thinking</h4>
-                <p>Research on forecasting and preparation strategies for potentially rapid developments in artificial general intelligence, with emphasis on governance and technical safeguards.</p>
+                <p>I am starting to look into shorter timelines governance. In my EU standards work, it was hard to zoom out and think big picture, as it felt a bit irrelevant for the day-to-day work of implementing the AI Act (e.g. in the CoP and JTC21 standards). Now I am starting to zoom out, and see what I can do in this space.</p>
             </div>
         </section>
         
         <section id="publications">
             <h3>Selected Publications</h3>
             <ul class="publications">
-                <li><a href="#">Gil, A., et al. (2023). "Towards Robust AI Standards: A Framework for Safety Evaluation." Conference on AI Safety.</a></li>
-                <li><a href="#">Smith, J., Gil, A. (2022). "Discernment Mechanisms in Large Language Models." Journal of Machine Learning Research.</a></li>
-                <li><a href="#">Gil, A. (2022). "Implications of Short Timelines for AI Governance." AI Alignment Forum.</a></li>
-                <li><a href="#">Johnson, M., Gil, A., et al. (2021). "Technical Requirements for Safe AI Systems." Proceedings of the International Conference on AI Safety.</a></li>
+                <li><a href="https://arxiv.org/abs/2410.23472" target="_blank">Gipiškis, R., San Joaquin, A., Chin, Z. S., Regenfuß, A., Gil, A., Holtman, K. (2024). "Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems." arXiv:2410.23472.</a></li>
+                <li>From Frameworks to Standards: Advancing Risk Management in Frontier AI (forthcoming, based on convening by Oxford Martin/AI Standards Hub/SaferAI)</li>
+                <li><a href="https://docs.google.com/document/d/1CAVyHy7-oNOCrJzLlwaJ_rJS1pIGkK3TDUk3CY9NQNw/edit?pli=1&tab=t.0#heading=h.gqb01d2ihge">Working Paper: Discernment in AI-Assisted Alignment research</a></li>
             </ul>
         </section>
     </div>
