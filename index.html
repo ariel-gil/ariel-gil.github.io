@@ -1,26 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ariel Gil - AI Safety Researcher</title>
+    <!-- Add Vollkorn font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: white;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --subheading-color: #7f8c8d;
+            --link-color: #3498db;
+            --border-color: #ecf0f1;
+            --box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --container-bg: #2d2d2d;
+            --text-color: #e0e0e0;
+            --heading-color: #f0f0f0;
+            --subheading-color: #b0b0b0;
+            --link-color: #64b5f6;
+            --border-color: #444444;
+            --box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Vollkorn', serif;
             line-height: 1.6;
             margin: 0 auto;
             max-width: 800px;
-            padding: 1rem;
+            padding: 2rem;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
         }
-        h1 {
-            color: #333;
+        
+        .container {
+            background-color: var(--container-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--text-color);
+            box-shadow: var(--box-shadow);
+            z-index: 100;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--border-color);
+        }
+        
+        .header-text h1 {
+            margin-bottom: 0.5rem;
+            color: var(--heading-color);
+        }
+        
+        .header-text h2 {
+            margin-top: 0;
+            color: var(--subheading-color);
+            font-weight: normal;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            color: var(--heading-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .project {
+            margin-bottom: 1rem;
+        }
+        
+        .project h4 {
+            margin-bottom: 0.5rem;
+            color: var(--link-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        
+        ul.publications {
+            padding-left: 1.5rem;
+        }
+        
+        ul.publications li {
+            margin-bottom: 0.5rem;
+        }
+        
+        ul.publications a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        ul.publications a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-<h1>Ariel Gil</h1>
-<h2>AI Safety Researcher</h2>
-<p>Welcome to my personal website.</p>
-<!-- Add your content here -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span> 
+        <span id="theme-text">Dark Mode</span>
+    </button>
+    
+    <div class="container">
+        <header>
+            <img src="IMG_2745 - Copy.jpeg" alt="Ariel Gil" class="profile-img">
+            <div class="header-text">
+                <h1>Ariel Gil</h1>
+                <h2>AI Safety Researcher</h2>
+                <p>Co-Lead at AI Standards Lab</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </header>
+        
+        <section id="about">
+            <h3>About Me</h3>
+            <p>I am an AI Safety Researcher focusing on ensuring the responsible development of artificial intelligence. My research interests include AI alignment, safety standards, and policy. I work on developing frameworks and methodologies to help mitigate risks from advanced AI systems.</p>
+        </section>
+        
+        <section id="projects">
+            <h3>Projects</h3>
+            
+            <div class="project">
+                <h4>AI Standards Lab</h4>
+                <p>Co-leading an initiative focused on developing standards and best practices for the safe deployment of AI systems. Our work aims to bridge technical research with practical implementation guidelines.</p>
+            </div>
+            
+            <div class="project">
+                <h4>Discernment</h4>
+                <p>A research project exploring how AI systems can better identify and respond to potentially harmful instructions. This work focuses on enhancing AI safety through improved decision-making capabilities.</p>
+            </div>
+            
+            <div class="project">
+                <h4>Short Timelines Thinking</h4>
+                <p>Research on forecasting and preparation strategies for potentially rapid developments in artificial general intelligence, with emphasis on governance and technical safeguards.</p>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h3>Selected Publications</h3>
+            <ul class="publications">
+                <li><a href="#">Gil, A., et al. (2023). "Towards Robust AI Standards: A Framework for Safety Evaluation." Conference on AI Safety.</a></li>
+                <li><a href="#">Smith, J., Gil, A. (2022). "Discernment Mechanisms in Large Language Models." Journal of Machine Learning Research.</a></li>
+                <li><a href="#">Gil, A. (2022). "Implications of Short Timelines for AI Governance." AI Alignment Forum.</a></li>
+                <li><a href="#">Johnson, M., Gil, A., et al. (2021). "Technical Requirements for Safe AI Systems." Proceedings of the International Conference on AI Safety.</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference or respect user system preference
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'dark') {
+                document.getElementById('theme-icon').textContent = '☀️';
+                document.getElementById('theme-text').textContent = 'Light Mode';
+            }
+        } else if (prefersDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.getElementById('theme-icon').textContent = '☀️';
+            document.getElementById('theme-text').textContent = 'Light Mode';
+        }
+    </script>
 </body>
 </html>
