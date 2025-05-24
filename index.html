@@ -70,11 +70,12 @@
             color: var(--text-color);
             box-shadow: var(--box-shadow);
             z-index: 100;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease, transform 0.2s ease;
         }
         
         .theme-toggle:hover {
             opacity: 0.9;
+            transform: scale(1.05);
         }
         
         header {
@@ -134,10 +135,12 @@
             display: flex;
             align-items: center;
             gap: 5px;
+            transition: transform 0.2s ease;
         }
         
         .social-links a:hover {
             text-decoration: underline;
+            transform: translateY(-2px);
         }
         
         ul.publications {
@@ -236,7 +239,7 @@
                 <h4>Discernment/Scalable oversight</h4>
                 <p>I am writing a paper exploring what can be called the "discernment problem" - scalable oversight failures specifically when using AI systems to automate AI safety research. I think that there's a chance we will hit this bottleneck soon, and it might make iterative alignment strategies less likely to work. I am trying to take different angles to it from the governance side - maybe as a policy brief, or maybe to give a better sense of the issue and what we can do about it. 
                     
-                See my <a href="https://docs.google.com/document/d/1CAVyHy7-oNOCrJzLlwaJ_rJS1pIGkK3TDUk3CY9NQNw/edit?pli=1&tab=t.0#heading=h.gqb01d2ihge" target="_blank">governance working paper</a> and my <a href="https://docs.google.com/document/d/1C980KdYo1C5ExsGj5ws9RVvrvUBxdgayqy8ujE25_rk/edit?pli=1&tab=t.0#heading=h.kc4qd7rv92ah" target="_blank">technical research proposal</a> which I am working on in parallel. </p> <!-- added hyperlink -->
+                See my <a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research" target="_blank">governance preprint</a> and my <a href="https://docs.google.com/document/d/1C980KdYo1C5ExsGj5ws9RVvrvUBxdgayqy8ujE25_rk/edit?pli=1&tab=t.0#heading=h.kc4qd7rv92ah" target="_blank">technical research proposal</a> which I am working on in parallel. </p> <!-- added hyperlink -->
             </div>
             
             <div class="project">
@@ -250,7 +253,8 @@
             <ul class="publications">
                 <li><a href="https://arxiv.org/abs/2410.23472" target="_blank">Gipiškis, R., San Joaquin, A., Chin, Z. S., Regenfuß, A., Gil, A., Holtman, K. (2024). "Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems." arXiv:2410.23472.</a></li>
                 <li><em>From Frameworks to Standards: Advancing Risk Management in Frontier AI</em> (forthcoming, based on convening by Oxford Martin/AI Standards Hub/SaferAI)</li>
-                <li><a href="https://docs.google.com/document/d/1CAVyHy7-oNOCrJzLlwaJ_rJS1pIGkK3TDUk3CY9NQNw/edit?pli=1&tab=t.0#heading=h.gqb01d2ihge">Working Paper: Discernment in AI-Assisted Alignment research</a></li>
+                <li><a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research">Preprint: When Control Succeeds but Discernment Fails: Preparing for AI-Assisted Safety Research </a></li>
+                <li><em> Forthcoming: Paper on Deprecating outdated AI benchmarks, with San Joaquin, A. Gipiškis, R., Staufer, L. </em></li>
             </ul>
         </section>
     </div>
