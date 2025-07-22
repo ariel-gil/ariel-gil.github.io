@@ -144,20 +144,44 @@
         }
         
         ul.publications {
-            padding-left: 1.5rem;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
         }
         
         ul.publications li {
-            margin-bottom: 0.5rem;
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            padding: 0.8em 1em;
+            margin-bottom: 1em;
+            transition: box-shadow 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7em;
         }
         
-        ul.publications a {
+        ul.publications li:hover {
+            box-shadow: 0 4px 16px rgba(52,152,219,0.10);
+        }
+        
+        ul.publications .pub-icon {
+            font-size: 1.3em;
+            margin-top: 0.1em;
             color: var(--link-color);
-            text-decoration: none;
+            flex-shrink: 0;
         }
         
-        ul.publications a:hover {
-            text-decoration: underline;
+        ul.publications .pub-title {
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+        
+        ul.publications .pub-meta {
+            color: #888;
+            font-size: 0.95em;
+            margin-left: 0.3em;
         }
 
         /* Add style for regular links */
@@ -251,11 +275,45 @@
         <section id="publications">
             <h3>Selected Publications and working papers</h3>
             <ul class="publications">
-                <li><a href="https://arxiv.org/abs/2410.23472" target="_blank">Gipiškis, R., San Joaquin, A., Chin, Z. S., Regenfuß, A., Gil, A., Holtman, K. (2024). "Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems." arXiv:2410.23472.</a></li>
-                <li><a href="https://arxiv.org/abs/2507.06434" target="_blank">San Joaquin, A., Gipiškis, R., Staufer, L., Gil, A. (2025). "Deprecating Benchmarks: Criteria and Framework." arXiv:2507.06434.</a> <span style="color:#888;font-size:90%;">Accepted to the ICML 2025 Technical AI Governance Workshop</span></li>
-                <li><a href="https://aigi.ox.ac.uk/publications/mapping-industry-practices-to-the-eu-ai-acts-gpai-code-of-practice-safety-and-security-measures/" target="_blank">Stelling, L., Yang, M., Gipiškis, R., Staufer, L., Chin, Z. S., Campos, S., Gil, A., Chen, M. (2025). "Mapping Industry Practices to the EU AI Act’s GPAI Code of Practice Safety and Security Measures." Oxford Martin AIGI.</a></li>
-                <li><em>From Frameworks to Standards: Advancing Risk Management in Frontier AI</em> (forthcoming, based on convening by Oxford Martin/AI Standards Hub/SaferAI)</li>
-                <li><a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research">Preprint: When Control Succeeds but Discernment Fails: Preparing for AI-Assisted Safety Research </a></li>
+                <li>
+                    <span class="pub-icon">📄</span>
+                    <div>
+                        <a href="https://arxiv.org/abs/2410.23472" target="_blank" class="pub-title">
+                            Gipiškis, R., San Joaquin, A., Chin, Z. S., Regenfuß, A., Gil, A., Holtman, K. (2024). "Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems."
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span class="pub-icon">📄</span>
+                    <div>
+                        <a href="https://arxiv.org/abs/2507.06434" target="_blank" class="pub-title">
+                            San Joaquin, A., Gipiškis, R., Staufer, L., Gil, A. (2025). "Deprecating Benchmarks: Criteria and Framework."
+                        </a>
+                        <span class="pub-meta">Accepted to the ICML 2025 Technical AI Governance Workshop</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="pub-icon">📄</span>
+                    <div>
+                        <a href="https://aigi.ox.ac.uk/publications/mapping-industry-practices-to-the-eu-ai-acts-gpai-code-of-practice-safety-and-security-measures/" target="_blank" class="pub-title">
+                            Stelling, L., Yang, M., Gipiškis, R., Staufer, L., Chin, Z. S., Campos, S., Gil, A., Chen, M. (2025). "Mapping Industry Practices to the EU AI Act’s GPAI Code of Practice Safety and Security Measures."
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span class="pub-icon">📄</span>
+                    <div>
+                        <a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research" class="pub-title">
+                            Preprint: When Control Succeeds but Discernment Fails: Preparing for AI-Assisted Safety Research
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span class="pub-icon">📄</span>
+                    <div>
+                        <span class="pub-title"><em>From Frameworks to Standards: Advancing Risk Management in Frontier AI</em> (forthcoming, based on convening by Oxford Martin/AI Standards Hub/SaferAI)</span>
+                    </div>
+                </li>
             </ul>
         </section>
     </div>
