@@ -6,11 +6,11 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="about">
     <h3>About Me</h3>
-    <p>I am an AI Governance and Safety Researcher working on EU AI Act Risk Management Standards. In 2023, I Co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice.</p>
+    <p>I am Techical AI Governance Researcher, having worked on the EU AI Act standards and Codes of Practice. In 2023, I Co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice. Currently, I am on a short sabatical, while staying as an Advisor/Board President</p>
         
-    <p>Originally a Mechatronics Engineer, I was an early team member an ophthalmic semi-autonomous surgical robotics startup, as well as in ML-based ultrasound diagnostics. My AI governance work is informed by my Risk Management experience, as well as technical and conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring governance in shorter timelines and how I can best contribute to that space.</p>
+    <p>Originally a Mechatronics Engineer, I was an early member an ophthalmic semi-autonomous surgical robotics startup. Later on, I worked in ML-based ultrasound diagnostics and laser eye surgery. My AI governance work is informed by my Risk Management experience, as well as technical and conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring governance in shorter timelines and how I can best contribute to that space, as well as doing direct technical work.</p>
     
-    <p>In my free time, I mountain bike, rock climb, and dance salsa (when I'm not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>.</p>
+    <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when I'm not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>.</p>
 </section>
 
 <section id="projects">
