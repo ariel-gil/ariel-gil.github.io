@@ -1,5 +1,40 @@
 title: Ariel Gil - AI Safety Researcher
-description: Personal website for Ariel Gil
+description: AI Safety Researcher focusing on AI Risk management, standards and policy.
 url: https://ariel-gil.github.io
+baseurl: ""
+
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
 theme: minima
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
