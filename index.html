@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AI Safety Researcher focusing on AI Risk management, standards and policy.">
+    <meta name="keywords" content="AI Safety, AI Standards, AI Risk Management, AI Policy, Ariel Gil">
+    <meta name="author" content="Ariel Gil">
+    <meta property="og:title" content="Ariel Gil - AI Safety Researcher">
+    <meta property="og:description" content="AI Safety Researcher focusing on AI Risk management, standards and policy.">
+    <meta property="og:image" content="https://ariel-gil.github.io/profile.jpeg">
+    <title>Ariel Gil - AI Safety Researcher</title>
+    
+    <!-- Add Vollkorn font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: white;
+            --container-bg: white;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --subheading-color: #7f8c8d;
+            --link-color: #3498db;
+            --border-color: #ecf0f1;
+            --box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        [data-theme="dark"] {
+            --bg-color: #2d2d2d;
+            --container-bg: #2d2d2d;
+            --text-color: #e0e0e0;
+            --heading-color: #f0f0f0;
+            --subheading-color: #b0b0b0;
+            --link-color: #64b5f6;
+            --border-color: #444444;
+            --box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+       html, body {
+        font-family: 'Vollkorn', serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+        background-color: var(--container-bg);
+        transition: all 0.3s ease;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--text-color);
+            box-shadow: var(--box-shadow);
+            z-index: 100;
+            transition: all 0.3s ease, transform 0.2s ease;
+        }
+        
+        .theme-toggle:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--border-color);
+        }
+        
+        .header-text h1 {
+            margin-bottom: 0.5rem;
+            color: var(--heading-color);
+        }
+        
+        .header-text h2 {
+            margin-top: 0;
+            color: var(--subheading-color);
+            font-weight: normal;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            color: var(--heading-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .project {
+            margin-bottom: 1rem;
+        }
+        
+        .project h4 {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: transform 0.2s ease;
+        }
+        
+        .social-links a:hover {
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+        
+        ul.publications {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        ul.publications li {
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            padding: 0.8em 1em;
+            margin-bottom: 1em;
+            transition: box-shadow 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7em;
+        }
+        
+        ul.publications li:hover {
+            box-shadow: 0 4px 16px rgba(52,152,219,0.10);
+        }
+        
+        ul.publications .pub-icon {
+            font-size: 1.3em;
+            margin-top: 0.1em;
+            color: var(--link-color);
+            flex-shrink: 0;
+        }
+        
+        ul.publications .pub-title {
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+        
+        ul.publications .pub-meta {
+            color: #888;
+            font-size: 0.95em;
+            margin-left: 0.3em;
+        }
+
+        /* Add style for regular links */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add media query for small screens */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+        <span id="theme-icon">🌙</span> 
+        <span id="theme-text">Dark Mode</span>
+    </button>
+    
+    <div class="container">
+        <header>
+            <img src="profile.jpeg" alt="Ariel Gil - Professional Headshot" class="profile-img">
+            <div class="header-text">
+                <h1>Ariel Gil</h1>
+                <h2>AI Safety Researcher</h2>
+                <p>Co-Lead at AI Standards Lab</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ariel-gil/" target="_blank" aria-label="Connect with Ariel on LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=jyyDF6YAAAAJ" target="_blank" aria-label="View Ariel's Google Scholar profile">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                        </svg>
+                        Google Scholar
+                    </a>
+                    <a href="https://github.com/ariel-gil" target="_blank" aria-label="View Ariel's GitHub profile">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <section id="about">
+            <h3>About Me</h3>
+            <p>I am an AI Governance and Safety Researcher working on EU AI Act Risk Management Standards. I co-lead the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) which I co-founded in late 2023.</p>
+                
+            <p>Originally a Mechatronics Engineer, I was an early team member an ophthalmic semi-autonomous surgical robotics startup, as well as in ML-based ultrasound diagnostics. My AI governance work is informed by my Risk Management experience, as well as technical and conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring governance in shorter timelines and how I can best contribute to that space.</p>
+            
+            <p>In my free time, I mountain bike, rock climb, and dance salsa (when I'm not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>.</p>
+        </section>
+
+        <section id="projects">
+            <h3>Current Projects</h3>
+            
+            <div class="project">
+                <h4>AI Standards Lab</h4>
+                <p>Co-leading a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We aim to bridge technical research with practical implementation work (translating research into a format suited for standards bodies). So far, we have focused on CEN-CENELEC JTC21 standards for the "High-Risk" systems in the AI Act, as well as the Codes of Practice.</p>
+            </div>
+            
+            <div class="project">
+                <h4>Discernment/Scalable oversight</h4>
+                <p>I am writing a paper exploring what can be called the "discernment problem" - scalable oversight failures specifically when using AI systems to automate AI safety research. I think that there's a chance we will hit this bottleneck soon, and it might make iterative alignment strategies less likely to work. I am trying to take different angles to it from the governance side - maybe as a policy brief, or maybe to give a better sense of the issue and what we can do about it.</p>
+                
+                <p>See my <a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research" target="_blank">governance preprint</a> and my <a href="https://docs.google.com/document/d/1C980KdYo1C5ExsGj5ws9RVvrvUBxdgayqy8ujE25_rk/edit?pli=1&tab=t.0#heading=h.kc4qd7rv92ah" target="_blank">technical research proposal</a> which I am working on in parallel.</p>
+            </div>
+            
+            <div class="project">
+                <h4>Short Timelines Thinking</h4>
+                <p>I am starting to look into governance for shorter timelines. In my EU standards work, it was hard to zoom out and think big picture, as it felt a bit irrelevant for the day-to-day work of implementing the AI Act (e.g. in the Codes of Practice and JTC21 standards). Now I am starting to zoom out, and see what I can do in this space.</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h3>Selected Publications and working papers</h3>
+            <ul class="publications">
+                <li>
+                    <img src="https://www.google.com/s2/favicons?domain=arxiv.org" alt="arxiv.org favicon" style="width:18px;height:18px;margin-right:0.5em;vertical-align:middle;">
+                    <div>
+                        <a href="https://arxiv.org/abs/2410.23472" target="_blank" class="pub-title">
+                            Gipiškis, R., San Joaquin, A., Chin, Z. S., Regenfuß, A., Gil, A., Holtman, K. (2024). "Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems."
+                        </a>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="https://www.google.com/s2/favicons?domain=arxiv.org" alt="arxiv.org favicon" style="width:18px;height:18px;margin-right:0.5em;vertical-align:middle;">
+                    <div>
+                        <a href="https://arxiv.org/abs/2507.06434" target="_blank" class="pub-title">
+                            San Joaquin, A., Gipiškis, R., Staufer, L., Gil, A. (2025). "Deprecating Benchmarks: Criteria and Framework."
+                        </a>
+                        <span class="pub-meta">Accepted to the ICML 2025 Technical AI Governance Workshop</span>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="https://www.google.com/s2/favicons?domain=ox.ac.uk" alt="ox.ac.uk favicon" style="width:18px;height:18px;margin-right:0.5em;vertical-align:middle;">
+                    <div>
+                        <a href="https://aigi.ox.ac.uk/publications/mapping-industry-practices-to-the-eu-ai-acts-gpai-code-of-practice-safety-and-security-measures/" target="_blank" class="pub-title">
+                            Stelling, L., Yang, M., Gipiškis, R., Staufer, L., Chin, Z. S., Campos, S., Gil, A., Chen, M. (2025). "Mapping Industry Practices to the EU AI Act's GPAI Code of Practice Safety and Security Measures."
+                        </a>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="https://www.google.com/s2/favicons?domain=researchgate.net" alt="researchgate.net favicon" style="width:18px;height:18px;margin-right:0.5em;vertical-align:middle;">
+                    <div>
+                        <a href="https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research" target="_blank" class="pub-title">
+                            Preprint: When Control Succeeds but Discernment Fails: Preparing for AI-Assisted Safety Research
+                        </a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div>
+                        <span class="pub-title">From Frameworks to Standards: Advancing Risk Management in Frontier AI (forthcoming, based on convening by Oxford Martin/AI Standards Hub/SaferAI)</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference or respect user system preference
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'dark') {
+                document.getElementById('theme-icon').textContent = '☀️';
+                document.getElementById('theme-text').textContent = 'Light Mode';
+            }
+        } else if (prefersDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.getElementById('theme-icon').textContent = '☀️';
+            document.getElementById('theme-text').textContent = 'Light Mode';
+        }
+    </script>
+</body>
+</html> 

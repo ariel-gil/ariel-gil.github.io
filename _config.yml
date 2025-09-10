@@ -6,7 +6,6 @@ baseurl: ""
 # Jekyll configuration
 markdown: kramdown
 highlighter: rouge
-theme: minima
 
 # Plugins
 plugins:
@@ -18,5 +17,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - index_OLD.html
 
