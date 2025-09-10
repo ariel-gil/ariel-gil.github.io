@@ -25,6 +25,9 @@ jobs:
         with:
           ruby-version: 3.1
           bundler-cache: true
+      - name: Clean vendor directory
+        run: |
+          rm -rf vendor/bundle/ruby/*/gems/jekyll-*/lib/site_template
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll

@@ -20,4 +20,11 @@ exclude:
   - README.md
   - vendor
   - .github
+  - node_modules
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - _site
+  - .git
+  - .gitignore
 
