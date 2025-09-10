@@ -8,25 +8,6 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /:name/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-
 # Plugins
 plugins:
   - jekyll-feed
@@ -37,4 +18,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - index_OLD.html
 
