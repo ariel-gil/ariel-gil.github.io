@@ -6,7 +6,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="about">
     <h3>About Me</h3>
-    <p>I am an AI Governance and Safety Researcher working on EU AI Act Risk Management Standards. I co-lead the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) which I co-founded in late 2023.</p>
+    <p>I am an AI Governance and Safety Researcher working on EU AI Act Risk Management Standards. In 2023, I Co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice.</p>
         
     <p>Originally a Mechatronics Engineer, I was an early team member an ophthalmic semi-autonomous surgical robotics startup, as well as in ML-based ultrasound diagnostics. My AI governance work is informed by my Risk Management experience, as well as technical and conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring governance in shorter timelines and how I can best contribute to that space.</p>
     
