@@ -10,7 +10,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         
     <p>Originally a Mechatronics Engineer, I was the 4th member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My AI governance work is informed by my risk management experience, as well as technical and conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring governance for shorter timelines, scalable oversight related experiments, as well as getting into direct technical work.</p>
     
-    <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>.</p>
+    <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>, or below.</p>
 </section>
 
 <section id="previous-ai-safety-projects">
