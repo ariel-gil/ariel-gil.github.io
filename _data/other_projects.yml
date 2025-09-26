@@ -35,7 +35,7 @@
   description: "Developed machine learning algorithms for ultrasound diagnostics and laser eye surgery applications. Worked on data analysis, algorithm development, and clinical validation studies."
   
 - title: "Tire & Vehicle Dynamics Modeling"
-  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership."
+  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership. See [Github Project](https://github.com/ariel-gil/Tire_vehicle_dynamics_modelling) with more details and Code"
   images:
     - "images/tire/SA Sweep.png"
     - "images/tire/Lap.png"
