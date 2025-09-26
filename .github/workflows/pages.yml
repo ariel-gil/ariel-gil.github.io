@@ -23,8 +23,12 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.4
           bundler-cache: true
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick libmagickwand-dev
       - name: Clean vendor directory
         run: |
           rm -rf vendor/bundle/ruby/*/gems/jekyll-*/lib/site_template

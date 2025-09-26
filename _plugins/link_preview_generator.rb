@@ -213,6 +213,8 @@ module Jekyll
         image.write(output_path)
         
         Jekyll.logger.info "Generated preview image: #{output_path}"
+      rescue MiniMagick::Error => e
+        Jekyll.logger.warn "MiniMagick error for #{image_url}: #{e.message}"
       rescue => e
         Jekyll.logger.warn "Failed to generate preview image for #{image_url}: #{e.message}"
       end
