@@ -1,4 +1,4 @@
-- title: "AI Scheming Research"
+- title: "AI Scheming Project"
   description: "Empirical research project testing whether coding assistants will 'benevolently deceive' clients to avoid implementing insecure code. I tried to set up a somewhat realistic toy environment for iterating monitors, using a 3-turn conversation. [Project details](https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client)"
   images:
     - "images/scheming/ba26jwinak4gthuex2bm.webp"
@@ -15,17 +15,10 @@
     - "images/ai standards/unnamed.png"
     - "images/ai standards/AISL Risk Catalog poster.pdf"
 
-- title: "Talos Fellowship - AI Governance"
-  description: "International governance track fellowship. Included an intensive training week in Brussels with training sessions from political party staffers"
-
-- title: "Constellation Research Center Fellowship"
-  description: "1-week visiting fellowship at Constellation Research Center"
-
-- title: "Apart Research METR Hackathon"
-  description: "Participated in Autonomous Capability (METR) Hackathon with 2 submissions, earning $1000+$3000 in task bounties (Cannot publish code due to METR contamination policy)"
-
-- title: "AI Safety Lectures & Teaching"
-  description: "Delivered lectures at the Toronto AI Safety Group covering AI Governance, Mesaoptimizers, Shard Theory, AI Timelines, ELK (Eliciting Latent Knowledge), and AI Control"
-
-- title: "AI Safety Fundamentals Courses"
-  description: "Completed AI Safety Fundamentals 101 & 201 (Alignment Track)."
+- title: "Courses etc"
+  description: |
+    • Talos Fellowship - AI Governance (International governance track fellowship with intensive training week in Brussels)
+    • Constellation Research Center Fellowship (1-week visiting fellowship)
+    • Apart Research METR Hackathon (2 submissions, $4000 in task bounties - code not publishable due to METR contamination policy)
+    • AI Safety Lectures & Teaching (Toronto AI Safety Group: AI Governance, Mesaoptimizers, Shard Theory, AI Timelines, ELK, AI Control)
+    • AI Safety Fundamentals 101 & 201 (Alignment Track)
