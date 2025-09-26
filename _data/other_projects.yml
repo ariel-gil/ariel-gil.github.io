@@ -1,0 +1,14 @@
+- title: "University Racecar Engineering"
+  description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published strategy/vehicle modeling work, and Electric Racecar capstone project"
+  image: "racecar-project.jpg"
+  
+- title: "Medical Robotics Startup (Forsight Robotics)"
+  description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within a year. Worked on system integration, force-feedback joystick design, and ergonomics testing. Conducted usability studies comparing robotic vs manual surgery with surgeons."
+  image: "medical-robotics-project.jpg"
+  
+- title: "ML-based Ultrasound Diagnostics"
+  description: "Developed machine learning algorithms for ultrasound diagnostics and laser eye surgery applications. Worked on data analysis, algorithm development, and clinical validation studies."
+  
+- title: "Tire & Vehicle Dynamics Modeling"
+  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership."
+  image: "tire_SA_sweep.png"
