@@ -3,3 +3,18 @@
 
 - title: "AI Standards Lab"
   description: "Co-founded and co-led a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We successfully delivered a 150-page contribution to the [EU GPAI Codes of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai), with much of our text directly incorporated into the final document. I also co-authored a [joint letter](https://thefuturesociety.org/wp-content/uploads/2025/06/ProtectingGPAIRules.pdf) to the European Commision, signed by two Nobel laureates and prominent academics. Earlier on, we focused on CEN-CENELEC JTC21 standards for \"High-Risk\" systems in the AI Act."
+
+- title: "Talos Fellowship - AI Governance"
+  description: "International governance track fellowship. Included an intensive training week in Brussels with training sessions from political party staffers"
+
+- title: "Constellation Research Center Fellowship"
+  description: "1-week visiting fellowship at Constellation Research Center"
+
+- title: "Apart Research METR Hackathon"
+  description: "Participated in Autonomous Capability (METR) Hackathon with 2 submissions, earning $1000+$3000 in task bounties (Cannot publish code due to METR contamination policy)"
+
+- title: "AI Safety Lectures & Teaching"
+  description: "Delivered lectures at the Toronto AI Safety Group covering AI Governance, Mesaoptimizers, Shard Theory, AI Timelines, ELK (Eliciting Latent Knowledge), and AI Control"
+
+- title: "AI Safety Fundamentals Courses"
+  description: "Completed AI Safety Fundamentals 101 & 201 (Alignment Track)."
