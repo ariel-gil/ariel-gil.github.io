@@ -1,5 +1,5 @@
 - title: "University Racecar Engineering"
-  description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published strategy/vehicle modeling work, and Electric Racecar capstone project"
+  description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published [strategy/vehicle modeling](https://www.researchgate.net/publication/392030237_POINT_SENSITIVITY_Racecar_Design_Parameter_Analysis_for_Competition_Targets) work, and [Electric Racecar capstone thesis](https://www.researchgate.net/publication/392028874_Development_of_an_Electric_Powertrain_System_for_a_Formula_SAE_Race_Car) project"
   images:
     - "images/racecar/IMG_5756.JPG"
     - "images/racecar/large_905927_bczmm_62udht2sy4qodw_3xrw.jpg"
@@ -9,12 +9,10 @@
 - title: "Offroad Racecar"
   description: "Technical lead for offroad racecar design, responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding"
   images:
-    - "images/offroad/knuckle_edited.png"
     - "images/offroad/large_905927__xqlkne8vzfmoxr2ds0sduiis.jpg"
     - "images/offroad/large_905927_gf4kb8obns3zotbt5rs73sowt.png"
+    - "images/offroad/knuckle_edited.png"
     - "images/offroad/large_905927_gjv6hu_xtjnmymmzps4bsfzpf.png"
-    - "images/offroad/large_905927_q2jttxrbetu6wsbzejnmnh7fg.jpg"
-    - "images/offroad/large_905927_uzt5cfncdyxyf7e667y04w8pf.jpg"
     - "images/offroad/original_pdf_905927_tx5qprabuqtsvm_vekug8uvpx.pdf"
   
 - title: "Laser Eye Floater Removal"
@@ -28,8 +26,8 @@
 - title: "Medical Robotics Startup (Forsight Robotics)"
   description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within a year. Worked on system integration, force-feedback joystick design, and ergonomics testing. Conducted usability studies comparing robotic vs manual surgery with surgeons."
   images:
-    - "images/large_905927_0tpja0uvxwtzeqdq4gconz3dr.png"
     - "images/large_905927_yvcws84zrhfqocnnlxsz2izid.jpg"
+    - "images/large_905927_0tpja0uvxwtzeqdq4gconz3dr.png"
     - "images/large_905927_lghob_jzids6n2q8u60gsfeeq.png"
   
 - title: "ML-based Ultrasound Diagnostics"
@@ -38,10 +36,10 @@
 - title: "Tire & Vehicle Dynamics Modeling"
   description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership."
   images:
+    - "images/tire/SA Sweep.png"
     - "images/tire/Lap.png"
     - "images/tire/Pneu trail vs SA.png"
     - "images/tire/Potentiometer Data.png"
-    - "images/tire/SA Sweep.png"
     - "images/tire/Tire warmup study.jpg"
 
 - title: "Mountain Bike Design"
