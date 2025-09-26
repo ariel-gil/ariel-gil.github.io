@@ -14,6 +14,7 @@ plugins:
   - jekyll-sitemap
   - link_preview_generator
   - link_preview_helper
+  - pdf_preview_generator
 
 # Enable link previews
 link_previews: true
