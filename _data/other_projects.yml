@@ -1,5 +1,5 @@
 - title: "University Racecar Engineering"
-  description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published [strategy/vehicle modeling](https://www.researchgate.net/publication/392030237_POINT_SENSITIVITY_Racecar_Design_Parameter_Analysis_for_Competition_Targets) work, and [Electric Racecar capstone thesis](https://www.researchgate.net/publication/392028874_Development_of_an_Electric_Powertrain_System_for_a_Formula_SAE_Race_Car) project"
+  description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published [strategy/vehicle modeling](https://www.researchgate.net/publication/392030237_POINT_SENSITIVITY_Racecar_Design_Parameter_Analysis_for_Competition_Targets) work and [Electric Racecar capstone thesis](https://www.researchgate.net/publication/392028874_Development_of_an_Electric_Powertrain_System_for_a_Formula_SAE_Race_Car) project"
   images:
     - "images/racecar/IMG_5756.JPG"
     - "images/racecar/large_905927_bczmm_62udht2sy4qodw_3xrw.jpg"
@@ -7,7 +7,7 @@
     - "images/racecar/large_905927_r0liweptu90h3lduqfs_l4ltg.png"
 
 - title: "Offroad Racecar"
-  description: "Technical lead for offroad racecar design, responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding"
+  description: "Technical lead for offroad racecar design, responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding."
   images:
     - "images/offroad/large_905927__xqlkne8vzfmoxr2ds0sduiis.jpg"
     - "images/offroad/large_905927_gf4kb8obns3zotbt5rs73sowt.png"
