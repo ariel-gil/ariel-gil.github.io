@@ -152,6 +152,33 @@
             transform: translateY(-2px);
         }
         
+        .main-nav {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: var(--border-color);
+            color: var(--link-color);
+        }
+        
+        .nav-link.active {
+            background-color: var(--link-color);
+            color: white;
+        }
+        
         ul.publications {
             list-style: none;
             padding-left: 0;
@@ -428,6 +455,11 @@
     </button>
     
     <div class="container">
+        <nav class="main-nav">
+            <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ '/misc' | relative_url }}" class="nav-link">Misc</a>
+        </nav>
+        
         <header>
             <img src="{{ '/profile.jpeg' | relative_url }}" alt="Ariel Gil - Professional Headshot" class="profile-img">
             <div class="header-text">
@@ -494,6 +526,19 @@
             document.getElementById('theme-icon').textContent = '☀️';
             document.getElementById('theme-text').textContent = 'Light Mode';
         }
+
+        // Highlight active navigation link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+                if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
+                    link.classList.add('active');
+                }
+            });
+        });
     </script>
 </body>
 </html> 
