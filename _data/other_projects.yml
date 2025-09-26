@@ -4,7 +4,10 @@
   
 - title: "Medical Robotics Startup (Forsight Robotics)"
   description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within a year. Worked on system integration, force-feedback joystick design, and ergonomics testing. Conducted usability studies comparing robotic vs manual surgery with surgeons."
-  image: "medical-robotics-project.jpg"
+  images:
+    - "images/large_905927_0tpja0uvxwtzeqdq4gconz3dr.png"
+    - "images/large_905927_yvcws84zrhfqocnnlxsz2izid.jpg"
+    - "images/large_905927_lghob_jzids6n2q8u60gsfeeq.png"
   
 - title: "ML-based Ultrasound Diagnostics"
   description: "Developed machine learning algorithms for ultrasound diagnostics and laser eye surgery applications. Worked on data analysis, algorithm development, and clinical validation studies."

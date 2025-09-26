@@ -58,17 +58,27 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 </section>
 
 <section id="other-projects">
-    <h3>Other Projects</h3>
+    <h3>Engineering Projects</h3>
     
     <!-- Show first project by default -->
     {% assign first_project = site.data.other_projects.first %}
-    <div class="project">
-        <h4>{{ first_project.title }}</h4>
-        {% if first_project.image %}
-        <img src="{{ first_project.image }}" alt="{{ first_project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
-        {% endif %}
-        <p>{{ first_project.description | markdownify }}</p>
-    </div>
+     <div class="project">
+         <h4>{{ first_project.title }}</h4>
+         {% if first_project.images %}
+         <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+             {% for img in first_project.images %}
+             <img src="{{ img }}" alt="{{ first_project.title }}" 
+                  onclick="openImageModal('{{ img }}', '{{ first_project.title }}')"
+                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+             {% endfor %}
+         </div>
+         {% elsif first_project.image %}
+         <img src="{{ first_project.image }}" alt="{{ first_project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
+         {% endif %}
+         <p>{{ first_project.description | markdownify }}</p>
+     </div>
     
     <div class="toggle-container">
         <button id="toggle-other-projects" onclick="toggleOtherProjects()" class="toggle-button">
@@ -78,17 +88,36 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     </div>
     
     <div id="other-projects-content" class="fade-content" style="display: none;">
-        {% for project in site.data.other_projects offset:1 %}
-        <div class="project">
-            <h4>{{ project.title }}</h4>
-            {% if project.image %}
-            <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
-            {% endif %}
-            <p>{{ project.description | markdownify }}</p>
-        </div>
-        {% endfor %}
+         {% for project in site.data.other_projects offset:1 %}
+         <div class="project">
+             <h4>{{ project.title }}</h4>
+             {% if project.images %}
+             <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+                 {% for img in project.images %}
+                 <img src="{{ img }}" alt="{{ project.title }}" 
+                      onclick="openImageModal('{{ img }}', '{{ project.title }}')"
+                      style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                      onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+                 {% endfor %}
+             </div>
+             {% elsif project.image %}
+             <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
+             {% endif %}
+             <p>{{ project.description | markdownify }}</p>
+         </div>
+         {% endfor %}
     </div>
 </section>
+
+<!-- Image Modal -->
+<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); cursor: pointer;" onclick="closeImageModal()">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90%;">
+        <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <div id="modalCaption" style="color: white; text-align: center; margin-top: 10px; font-size: 16px; font-weight: bold;"></div>
+    </div>
+    <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeImageModal()">&times;</span>
+</div>
 
 <script>
 function toggleOtherProjects() {
@@ -123,7 +152,35 @@ function toggleOtherProjects() {
         
         toggleText.textContent = 'View more projects';
         toggleArrow.textContent = '▼';
-        button.classList.remove('active');
-    }
+         button.classList.remove('active');
+     }
+ }
+
+function openImageModal(imageSrc, imageTitle) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+    
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+    modalCaption.textContent = imageTitle;
+    
+    // Prevent body scrolling when modal is open
+    document.body.style.overflow = 'hidden';
 }
-</script> 
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    
+    // Restore body scrolling
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when pressing Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeImageModal();
+    }
+});
+</script>
