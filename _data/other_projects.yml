@@ -1,3 +1,12 @@
+- title: "Tire & Vehicle Dynamics Modeling"
+  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership. See [Github Project](https://github.com/ariel-gil/Tire_vehicle_dynamics_modelling) with more details and Code"
+  images:
+    - "images/tire/SA Sweep.png"
+    - "images/tire/Lap.png"
+    - "images/tire/Pneu trail vs SA.png"
+    - "images/tire/Potentiometer Data.png"
+    - "images/tire/Tire warmup study.jpg"
+
 - title: "University Racecar Engineering"
   description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published [strategy/vehicle modeling](https://www.researchgate.net/publication/392030237_POINT_SENSITIVITY_Racecar_Design_Parameter_Analysis_for_Competition_Targets) work and [Electric Racecar capstone thesis](https://www.researchgate.net/publication/392028874_Development_of_an_Electric_Powertrain_System_for_a_Formula_SAE_Race_Car) project"
   images:
@@ -33,15 +42,6 @@
   
 - title: "ML-based Ultrasound Diagnostics"
   description: "Developed machine learning algorithms for ultrasound diagnostics and laser eye surgery applications. Worked on data analysis, algorithm development, and clinical validation studies."
-  
-- title: "Tire & Vehicle Dynamics Modeling"
-  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership. See [Github Project](https://github.com/ariel-gil/Tire_vehicle_dynamics_modelling) with more details and Code"
-  images:
-    - "images/tire/SA Sweep.png"
-    - "images/tire/Lap.png"
-    - "images/tire/Pneu trail vs SA.png"
-    - "images/tire/Potentiometer Data.png"
-    - "images/tire/Tire warmup study.jpg"
 
 - title: "Mountain Bike Design"
   description: "Designed and manufactured a mountain bike frame, using high-strength Chromoly tubing (Colombus Zona and Cromor). Extensive simulations and DFM"

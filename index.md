@@ -162,53 +162,54 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 <section id="other-projects">
     <h3>Engineering Projects</h3>
     
-    <!-- Show first project by default -->
-    {% assign first_project = site.data.other_projects.first %}
-     <div class="project">
-         <h4>{{ first_project.title }}</h4>
-         {% if first_project.images %}
-         <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
-             {% for img in first_project.images %}
-             {% if img contains '.pdf' %}
-             {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
-             {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
-             <img src="{{ preview_path }}" alt="{{ first_project.title }} PDF Preview" 
-                  onclick="openPdf('{{ img }}', '{{ first_project.title }}')"
-                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
-                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
-                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-             <div onclick="openPdf('{{ img }}', '{{ first_project.title }}')"
-                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
-                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
-                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
-                 <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
-                 <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
-             </div>
-             {% else %}
-             <img src="{{ img }}" alt="{{ first_project.title }}" 
-                  onclick="openImageModal('{{ img }}', '{{ first_project.title }}')"
-                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
-                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
-                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
-             {% endif %}
-             {% endfor %}
-         </div>
-         {% elsif first_project.image %}
-         <img src="{{ first_project.image }}" alt="{{ first_project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
-         {% endif %}
-         <p>{{ first_project.description | markdownify }}</p>
-         {% if first_project.links %}
-         <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
-             {% for link in first_project.links %}
-             {{ link.url | render_link_preview: link.title }}
-             {% endfor %}
-         </div>
-         {% endif %}
-         {% if first_project.additional_text %}
-         <p>{{ first_project.additional_text | markdownify }}</p>
-         {% endif %}
-     </div>
+    <!-- Show first 2 projects by default -->
+    {% for project in site.data.other_projects limit:2 %}
+    <div class="project">
+        <h4>{{ project.title }}</h4>
+        {% if project.images %}
+        <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+            {% for img in project.images %}
+            {% if img contains '.pdf' %}
+            {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
+            {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
+            <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+                 onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                 style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                 onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                 style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
+                 onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+                <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
+                <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
+            </div>
+            {% else %}
+            <img src="{{ img }}" alt="{{ project.title }}" 
+                 onclick="openImageModal('{{ img }}', '{{ project.title }}')"
+                 style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                 onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% elsif project.image %}
+        <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
+        {% endif %}
+        <p>{{ project.description | markdownify }}</p>
+        {% if project.links %}
+        <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+            {% for link in project.links %}
+            {{ link.url | render_link_preview: link.title }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if project.additional_text %}
+        <p>{{ project.additional_text | markdownify }}</p>
+        {% endif %}
+    </div>
+    {% endfor %}
     
     <div class="toggle-container">
         <button id="toggle-other-projects" onclick="toggleOtherProjects()" class="toggle-button">
@@ -218,7 +219,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     </div>
     
     <div id="other-projects-content" class="fade-content" style="display: none;">
-         {% for project in site.data.other_projects offset:1 %}
+         {% for project in site.data.other_projects offset:2 %}
          <div class="project">
              <h4>{{ project.title }}</h4>
              {% if project.images %}
