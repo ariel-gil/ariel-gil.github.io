@@ -1,5 +1,5 @@
 - title: "Tire & Vehicle Dynamics Modeling"
-  description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership. See [Github Project](https://github.com/ariel-gil/Tire_vehicle_dynamics_modelling) with more details and Code"
+  description: "3-year research project involving 300+ hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built car/racetrack models for  performance optimization. See [Github Project](https://github.com/ariel-gil/Tire_vehicle_dynamics_modelling) with more details and Code. This work was later used for in a [\"team strategy\" research project](https://www.researchgate.net/publication/392030237_POINT_SENSITIVITY_Racecar_Design_Parameter_Analysis_for_Competition_Targets) working top-down to define design requirements based on competition performance targets. (see below)"
   images:
     - "images/tire/SA Sweep.png"
     - "images/tire/Lap.png"
@@ -16,7 +16,7 @@
     - "images/racecar/large_905927_r0liweptu90h3lduqfs_l4ltg.png"
 
 - title: "Offroad Racecar"
-  description: "Technical lead for offroad racecar design, responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding."
+  description: "Technical lead for offroad university racecar design team ([Baja SAE](https://www.bajasae.net/)), responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding."
   images:
     - "images/offroad/large_905927__xqlkne8vzfmoxr2ds0sduiis.jpg"
     - "images/offroad/large_905927_gf4kb8obns3zotbt5rs73sowt.png"
@@ -25,8 +25,8 @@
     - "images/offroad/large_905927_uzt5cfncdyxyf7e667y04w8pf.jpg"
     - "images/offroad/original_pdf_905927_tx5qprabuqtsvm_vekug8uvpx.pdf"
   
-- title: "Laser Eye Floater Removal"
-  description: "Mechanical design consultant at Pulsemedica developing the motion system for a laser-based ophthalmic treatment device. Conducted risk analysis and usability mockups for the precision laser targeting system used in eye floater removal procedures."
+- title: "Laser Eye Floater Removal (Pulsemendica)"
+  description: "Mechanical design - developing the motion system for a laser-based ophthalmic treatment device. Conducted risk analysis and usability mockups for the precision laser targeting system to be used for a non-invasive eye floater removal surgery."
   images:
     - "images/laser/large_905927_0wwpoaat067vhthitre_gbtus.jpg"
     - "images/laser/large_905927_cbp9wofn5oovzuttu9krvkpb_.jpg"
@@ -34,17 +34,17 @@
     - "images/laser/large_905927_uftgofmtcx5fo7callxevawyg.jpg"
   
 - title: "Medical Robotics Startup (Forsight Robotics)"
-  description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within a year. Worked on system integration, force-feedback joystick design, and ergonomics testing. Conducted usability studies comparing robotic vs manual surgery with surgeons."
+  description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within ~1 year. Worked on end effector, surgical tools, system integration, force-feedback joystick design, and ergonomics testing. Iterated Vision/tool-tip tracking requirements with CV team, and learned about challanges in ML risk management (even for simple non-closed loop tracking). Conducted usability studies comparing robotic vs manual surgery with surgeons."
   images:
     - "images/large_905927_yvcws84zrhfqocnnlxsz2izid.jpg"
     - "images/large_905927_0tpja0uvxwtzeqdq4gconz3dr.png"
     - "images/large_905927_lghob_jzids6n2q8u60gsfeeq.png"
   
 - title: "ML-based Ultrasound Diagnostics"
-  description: "Developed machine learning algorithms for ultrasound diagnostics and laser eye surgery applications. Worked on data analysis, algorithm development, and clinical validation studies."
+  description: "Developed and 3D Printed data collection fixtures, for a machine learning based ultrasound diagnostics (heart disease and pregnancy checks) startup. The fixtures were used in clinical validation studies at various hospitals."
 
 - title: "Mountain Bike Design"
-  description: "Designed and manufactured a mountain bike frame, using high-strength Chromoly tubing (Colombus Zona and Cromor). Extensive simulations and DFM"
+  description: "Designed and manufactured a mountain bike frame, using high-strength Chromoly tubing (Colombus Zona and Cromor). Extensive simulations and DFM."
   images:
     - "images/bike/large_905927_7jvy9imcjafdejc2bckgotfn3.png"
     - "images/bike/large_905927_8bqcfzfpphyz8p9r2x4gonvwe.jpg"
