@@ -143,9 +143,13 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         <li>
             <img src="https://www.google.com/s2/favicons?domain={{ pub.domain }}" alt="{{ pub.domain }} favicon" style="width:18px;height:18px;margin-right:0.5em;vertical-align:middle;">
             <div>
+                {% if pub.url and pub.url != "" %}
                 <a href="{{ pub.url }}" target="_blank" class="pub-title">
                     {{ pub.title }}
                 </a>
+                {% else %}
+                <span class="pub-title">{{ pub.title }}</span>
+                {% endif %}
                 {% if pub.meta %}
                 <span class="pub-meta">{{ pub.meta }}</span>
                 {% endif %}
