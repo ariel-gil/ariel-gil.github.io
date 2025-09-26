@@ -67,11 +67,21 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
          {% if first_project.images %}
          <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
              {% for img in first_project.images %}
+             {% if img contains '.pdf' %}
+             <div onclick="openPdf('{{ img }}', '{{ first_project.title }}')"
+                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
+                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+                 <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
+                 <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
+             </div>
+             {% else %}
              <img src="{{ img }}" alt="{{ first_project.title }}" 
                   onclick="openImageModal('{{ img }}', '{{ first_project.title }}')"
                   style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                   onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                   onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+             {% endif %}
              {% endfor %}
          </div>
          {% elsif first_project.image %}
@@ -94,11 +104,21 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
              {% if project.images %}
              <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
                  {% for img in project.images %}
+                 {% if img contains '.pdf' %}
+                 <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                      style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
+                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                      onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+                     <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
+                     <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
+                 </div>
+                 {% else %}
                  <img src="{{ img }}" alt="{{ project.title }}" 
                       onclick="openImageModal('{{ img }}', '{{ project.title }}')"
                       style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                       onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                       onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
+                 {% endif %}
                  {% endfor %}
              </div>
              {% elsif project.image %}
@@ -167,6 +187,11 @@ function openImageModal(imageSrc, imageTitle) {
     
     // Prevent body scrolling when modal is open
     document.body.style.overflow = 'hidden';
+}
+
+function openPdf(pdfSrc, pdfTitle) {
+    // Open PDF in a new tab
+    window.open(pdfSrc, '_blank');
 }
 
 function closeImageModal() {

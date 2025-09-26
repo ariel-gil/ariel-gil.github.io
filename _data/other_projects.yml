@@ -1,6 +1,29 @@
 - title: "University Racecar Engineering"
   description: "Led a 35-person university racecar engineering team to 28th place out of 110 international teams in the '[Formula SAE](https://www.fsaeonline.com/)' competition, with a target top-10 finish the following year (competition cancelled due to COVID). Responsible for vehicle dynamics modeling, tire data analysis, and overall system integration. Over 300 hours of MATLAB data analysis and research over 3 years. See published strategy/vehicle modeling work, and Electric Racecar capstone project"
-  image: "racecar-project.jpg"
+  images:
+    - "images/racecar/IMG_5756.JPG"
+    - "images/racecar/large_905927_bczmm_62udht2sy4qodw_3xrw.jpg"
+    - "images/racecar/large_905927_ilox5ulefdzwm5s7pvukazo0w.png"
+    - "images/racecar/large_905927_r0liweptu90h3lduqfs_l4ltg.png"
+
+- title: "Offroad Racecar"
+  description: "Technical lead for offroad racecar design, responsible for suspension, steering, and ergonomics. The 2018-2019 car featured unusual (perhaps innovative?) kinematics with 70/30 weight distribution, short wheelbase, and high ground clearance, as well as long uncut bent tubing for easier welding"
+  images:
+    - "images/offroad/knuckle_edited.png"
+    - "images/offroad/large_905927__xqlkne8vzfmoxr2ds0sduiis.jpg"
+    - "images/offroad/large_905927_gf4kb8obns3zotbt5rs73sowt.png"
+    - "images/offroad/large_905927_gjv6hu_xtjnmymmzps4bsfzpf.png"
+    - "images/offroad/large_905927_q2jttxrbetu6wsbzejnmnh7fg.jpg"
+    - "images/offroad/large_905927_uzt5cfncdyxyf7e667y04w8pf.jpg"
+    - "images/offroad/original_pdf_905927_tx5qprabuqtsvm_vekug8uvpx.pdf"
+  
+- title: "Laser Eye Floater Removal"
+  description: "Mechanical design consultant at Pulsemedica developing the motion system for a laser-based ophthalmic treatment device. Conducted risk analysis and usability mockups for the precision laser targeting system used in eye floater removal procedures."
+  images:
+    - "images/laser/large_905927_0wwpoaat067vhthitre_gbtus.jpg"
+    - "images/laser/large_905927_cbp9wofn5oovzuttu9krvkpb_.jpg"
+    - "images/laser/large_905927_nutsp5kviazfuucrqkk7_tvpy.jpg"
+    - "images/laser/large_905927_uftgofmtcx5fo7callxevawyg.jpg"
   
 - title: "Medical Robotics Startup (Forsight Robotics)"
   description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within a year. Worked on system integration, force-feedback joystick design, and ergonomics testing. Conducted usability studies comparing robotic vs manual surgery with surgeons."
@@ -14,4 +37,18 @@
   
 - title: "Tire & Vehicle Dynamics Modeling"
   description: "3-year research project involving over 300 hours of MATLAB data analysis of empirical tire data and vehicle dynamics modeling. Built comprehensive models for racecar performance optimization and later mentored subsystem leads when transitioning to team leadership."
-  image: "tire_SA_sweep.png"
+  images:
+    - "images/tire/Lap.png"
+    - "images/tire/Pneu trail vs SA.png"
+    - "images/tire/Potentiometer Data.png"
+    - "images/tire/SA Sweep.png"
+    - "images/tire/Tire warmup study.jpg"
+
+- title: "Mountain Bike Design"
+  description: "Designed and manufactured a mountain bike frame, using high-strength Chromoly tubing (Colombus Zona and Cromor). Extensive simulations and DFM"
+  images:
+    - "images/bike/large_905927_7jvy9imcjafdejc2bckgotfn3.png"
+    - "images/bike/large_905927_8bqcfzfpphyz8p9r2x4gonvwe.jpg"
+    - "images/bike/large_905927_helwi4oeihg3wzqlgakqsg5dy.png"
+    - "images/bike/large_905927_mioesekoj2dmspqa_xeljlwst.jpg"
+    - "images/bike/large_905927_qpu_lbvmi6kawslak5nh_juie.jpg"
