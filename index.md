@@ -27,7 +27,8 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 <section id="previous-ai-safety-projects">
     <h3>Previous AI Safety Projects</h3>
     
-    {% for project in site.data.ai_safety_projects %}
+    <!-- Show first 2 projects by default -->
+    {% for project in site.data.ai_safety_projects limit:2 %}
     <div class="project">
         <h4>{{ project.title }}</h4>
         {% if project.image %}
@@ -36,6 +37,25 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         <p>{{ project.description | markdownify }}</p>
     </div>
     {% endfor %}
+    
+    <div class="toggle-container">
+        <button id="toggle-ai-safety-projects" onclick="toggleAiSafetyProjects()" class="toggle-button">
+            <span id="toggle-ai-safety-text">View more projects</span>
+            <span id="toggle-ai-safety-arrow">▼</span>
+        </button>
+    </div>
+    
+    <div id="ai-safety-projects-content" class="fade-content" style="display: none;">
+        {% for project in site.data.ai_safety_projects offset:2 %}
+        <div class="project">
+            <h4>{{ project.title }}</h4>
+            {% if project.image %}
+            <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
+            {% endif %}
+            <p>{{ project.description | markdownify }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </section>
 
 <section id="publications">
@@ -175,6 +195,42 @@ function toggleOtherProjects() {
          button.classList.remove('active');
      }
  }
+
+function toggleAiSafetyProjects() {
+    const content = document.getElementById('ai-safety-projects-content');
+    const toggleText = document.getElementById('toggle-ai-safety-text');
+    const toggleArrow = document.getElementById('toggle-ai-safety-arrow');
+    const button = document.getElementById('toggle-ai-safety-projects');
+    
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-10px)';
+        
+        // Trigger fade-in animation
+        setTimeout(() => {
+            content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+        }, 10);
+        
+        toggleText.textContent = 'Hide additional projects';
+        toggleArrow.textContent = '▲';
+        button.classList.add('active');
+    } else {
+        content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-10px)';
+        
+        setTimeout(() => {
+            content.style.display = 'none';
+        }, 300);
+        
+        toggleText.textContent = 'View more projects';
+        toggleArrow.textContent = '▼';
+        button.classList.remove('active');
+    }
+}
 
 function openImageModal(imageSrc, imageTitle) {
     const modal = document.getElementById('imageModal');
