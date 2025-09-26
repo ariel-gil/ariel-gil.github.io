@@ -1,28 +1,20 @@
 - title: "AI Scheming Project"
-  description: "Empirical research project testing whether coding assistants will 'benevolently deceive' clients to avoid implementing insecure code. I tried to set up a somewhat realistic toy environment for iterating monitors, using a 3-turn conversation."
+  description: "Empirical research project testing whether coding assistants will 'benevolently deceive' clients to avoid implementing insecure code. I tried to set up a somewhat realistic toy environment for iterating monitors, using a 3-turn conversation. [Project Details on LessWrong](https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client)"
   images:
     - "images/scheming/czc1tfpo7crr9dhhyfwp.webp"
     - "images/scheming/hqz0ojexafzn0yhsgs0t.webp"
     - "images/scheming/mnja2odatzspjnn2a24a.webp"
     - "images/scheming/w29zxapu9pl9aovlo04y.webp"
     - "images/scheming/ba26jwinak4gthuex2bm.webp"
-  links:
-    - title: "Project Details on LessWrong"
-      url: "https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client"
 
 
 - title: "AI Standards Lab"
-  description: "Co-founded and co-led a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We successfully delivered a 150-page contribution to the EU GPAI Codes of Practice, with much of our text directly incorporated into the final document. I also co-authored a joint letter to the European Commission, signed by two Nobel laureates and prominent academics. Earlier on, we focused on CEN-CENELEC JTC21 standards for \"High-Risk\" systems in the AI Act."
+  description: "Co-founded and co-led a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We successfully delivered a 150-page contribution to the [EU GPAI Codes of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai), with much of our text directly incorporated into the final document. I also co-authored a [joint letter to the European Commission](https://thefuturesociety.org/wp-content/uploads/2025/06/ProtectingGPAIRules.pdf), signed by two Nobel laureates and prominent academics. Earlier on, we focused on CEN-CENELEC JTC21 standards for \"High-Risk\" systems in the AI Act."
   images:
     - "images/ai standards/AISL Risk Catalog poster.webp"
     - "images/ai standards/IMG_4817.jpg"
     - "images/ai standards/unnamed.png"
     - "images/ai standards/AISL Risk Catalog poster.pdf"
-  links:
-    - title: "EU GPAI Codes of Practice"
-      url: "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
-    - title: "Joint Letter to European Commission"
-      url: "https://thefuturesociety.org/wp-content/uploads/2025/06/ProtectingGPAIRules.pdf"
 
 - title: "Courses, fellowships, etc."
   description: |
