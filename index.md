@@ -88,8 +88,16 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
          <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
              {% for img in first_project.images %}
              {% if img contains '.pdf' %}
+             {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
+             {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
+             <img src="{{ preview_path }}" alt="{{ first_project.title }} PDF Preview" 
+                  onclick="openPdf('{{ img }}', '{{ first_project.title }}')"
+                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
              <div onclick="openPdf('{{ img }}', '{{ first_project.title }}')"
-                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
+                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                   onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                   onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
                  <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
@@ -125,8 +133,16 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
              <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
                  {% for img in project.images %}
                  {% if img contains '.pdf' %}
+                 {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
+                 {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
+                 <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+                      onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                      style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
+                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
+                      onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                  <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
-                      style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
+                      style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                       onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                       onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
                      <div style="font-size: 24px; margin-bottom: 5px;">📄</div>
