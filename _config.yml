@@ -19,6 +19,9 @@ plugins:
 # Enable link previews
 link_previews: true
 
+# Enable PDF previews
+pdf_previews: true
+
 # Disable caching for testing
 cache: false
 
