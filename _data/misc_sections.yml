@@ -1,38 +1,39 @@
 - title: "Hiking & Travel"
   description: "I like hiking and seeing new places, and have recently done a trip to Peru. It was my first non-western country, and it was a great experience."
   images:
-    - "images/misc/peru 1/PXL_20250123_233300364.jpg"
-    - "images/misc/peru 1/PXL_20250124_114851715.jpg"
-    - "images/misc/peru 1/PXL_20250124_202448193.jpg"
+    - "/images/misc/peru_1/PXL_20250123_233300364.jpg"
+    - "/images/misc/peru_1/PXL_20250124_114851715.jpg"
+    - "/images/misc/peru_1/PXL_20250124_202448193.jpg"
 
 - title: "Biking"
   description: "I like mountain biking quite a bit, but also like road biking - especially on 70s steel frame \"10-spd\" bikes. I have a 1972 Czech bike that I found used for cheap. I find that these bikes dont break, and they ride nicer than newer bikes. For me, biking isnt an adrenaline rush, but more of just a fun way to get into a flow state, and also do physical activity in nature. Same goes for motorcycles - I dont enjoy the thrill, but I like how it enables a new way to explore outdoors."
   images:
-    - "images/misc/bike/20250906_104641.jpg"
-    - "images/misc/bike/IMG_6019.JPG"
+    - "/images/misc/bike/20250906_104641.jpg"
+    - "/images/misc/bike/IMG_6019.JPG"
 
 - title: "Typewriters"
   description: "Other old things I like are typewriters - especially the semi-electric ones that still have the ribbon pressing action, but are a bit faster to type on. I've written various notes during COVID that I never published, and hope to get back to using it once I am back from travelling."
   images:
-    - "images/misc/typewriters/PXL_20210424_071515374.jpg"
-    - "images/misc/typewriters/PXL_20210424_071810294.jpg"
+    - "/images/misc/typewriters/PXL_20210424_071515374.jpg"
+    - "/images/misc/typewriters/PXL_20210424_071810294.jpg"
 
 - title: "Motorcycles"
   description: "I've had some on/off interest in motorcycles, and recently did a 4-day trip in the Peruvian Andes. A few years ago, I also borrowed a pretty interesting Honda CBR250RR bike."
   images:
-    - "images/misc/moto/IMG_20190906_215130.jpg"
-    - "images/misc/moto/IMG_3121.JPG"
-    - "images/misc/moto/PXL_20250831_180501451.jpg"
+    - "/images/misc/moto/IMG_20190906_215130.jpg"
+    - "/images/misc/moto/IMG_3121.JPG"
+    - "/images/misc/moto/PXL_20250831_180501451.jpg"
+    - "/images/misc/moto/PXL_20250901_202157034.jpg"
 
 - title: "Cars"
   description: "Cars have been a big part of my childhood, and later also my engineering degree. I really like the 70's F1 history - where innovation was still wild and step-wise, rather than incremental. The Brabham \"Fan Car\" is one example. I like the idea of \"finding a loophole/lucky break\" and exploiting it to win against the more rule-following competition. Cars were for me perhaps just a fun medium to play around with innovation, before moving on to other things."
   images:
-    - "images/misc/cars/brabham-bt46b-f1-fan-car-398803265.jpg"
-    - "images/misc/cars/IMG_20180217_172347.jpg"
-    - "images/misc/cars/PXL_20240506_231545352.jpg"
+    - "/images/misc/cars/brabham-bt46b-f1-fan-car-398803265.jpg"
+    - "/images/misc/cars/IMG_20180217_172347.jpg"
+    - "/images/misc/cars/PXL_20240506_231545352.jpg"
 
 - title: "Metal Working"
   description: "I used to do quite a bit of metal working. I find it satisfying, and would like to get back to it - welding, machining, getting laser cut parts and putting them together. Metal working is harder than woodworking, but I think more satisfying."
   images:
-    - "images/misc/metal working/IMG_20190920_151908.jpg"
-    - "images/misc/metal working/IMG_20190930_001504.jpg"
+    - "/images/misc/metal working/IMG_20190920_151908.jpg"
+    - "/images/misc/metal working/IMG_20190930_001504.jpg"
