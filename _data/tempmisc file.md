@@ -2,7 +2,7 @@ A few random hobbies.
 I like hiking and seeing new places, and have recently done a trip to Peru. It was my first non-western country, and it was a great experience. 
 [placeholder - peru1]
 
-I like mountain biking quite a bit, but also like road biking - especially on 70s steel frame "10-spd" bikes. I have a 1972 Czech bike that I found used for cheap. I find that these bikes dont break, and they ride nicer than newer bikes.
+I like mountain biking quite a bit, but also like road biking - especially on 70s steel frame "10-spd" bikes. I have a 1972 Czech bike that I found used for cheap. I find that these bikes dont break, and they ride nicer than newer bikes. For me, biking isnt an adrenaline rush, but more of just a fun way to get into a flow state, and also do physical activity in nature. Same goes for motorcycles - I dont enjoy the thrill, but I like how it enables a new way to explore outdoors. 
 [placeholder - bikes] 
 
 Other old things I like are typewriters - especially the semi-electric ones that still have the ribbon pressing action, but are a bit faster to type on. I've written various notes during COVID that I never published, and hope to get back to using it once I am back from travelling. 
