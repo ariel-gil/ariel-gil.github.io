@@ -1,11 +1,11 @@
 - title: "AI Scheming Project"
   description: "Empirical research project testing whether coding assistants will 'benevolently deceive' clients to avoid implementing insecure code. I tried to set up a somewhat realistic toy environment for iterating monitors, using a 3-turn conversation. [Project details](https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client)"
   images:
-    - "images/scheming/ba26jwinak4gthuex2bm.webp"
     - "images/scheming/czc1tfpo7crr9dhhyfwp.webp"
     - "images/scheming/hqz0ojexafzn0yhsgs0t.webp"
     - "images/scheming/mnja2odatzspjnn2a24a.webp"
     - "images/scheming/w29zxapu9pl9aovlo04y.webp"
+    
 
 - title: "AI Standards Lab"
   description: "Co-founded and co-led a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We successfully delivered a 150-page contribution to the [EU GPAI Codes of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai), with much of our text directly incorporated into the final document. I also co-authored a [joint letter](https://thefuturesociety.org/wp-content/uploads/2025/06/ProtectingGPAIRules.pdf) to the European Commision, signed by two Nobel laureates and prominent academics. Earlier on, we focused on CEN-CENELEC JTC21 standards for \"High-Risk\" systems in the AI Act."
@@ -15,10 +15,23 @@
     - "images/ai standards/unnamed.png"
     - "images/ai standards/AISL Risk Catalog poster.pdf"
 
-- title: "Courses etc"
+- title: "Courses, fellowships, etc."
   description: |
     • Talos Fellowship - AI Governance (International governance track fellowship with intensive training week in Brussels)
     • Constellation Research Center Fellowship (1-week visiting fellowship)
     • Apart Research METR Hackathon (2 submissions, $4000 in task bounties - code not publishable due to METR contamination policy)
-    • AI Safety Lectures & Teaching (Toronto AI Safety Group: AI Governance, Mesaoptimizers, Shard Theory, AI Timelines, ELK, AI Control)
-    • AI Safety Fundamentals 101 & 201 (Alignment Track)
+    • AI Safety Lectures & Teaching (Toronto AI Safety Group)
+  links:
+    - title: "AI Governance Lecture"
+      url: "https://drive.google.com/file/d/1cqccDkDPH72ZjBPl0Q30piXI8Wcvm9_5/view"
+    - title: "Mesaoptimizers Presentation"
+      url: "https://miro.com/app/board/uXjVNlqdxxA=/?share_link_id=208586423568&shareablePresentation=1"
+    - title: "Shard Theory Presentation"
+      url: "https://miro.com/app/board/uXjVK_gqhYk=/?share_link_id=380458724426&shareablePresentation=1"
+    - title: "AI Timelines Presentation"
+      url: "https://docs.google.com/presentation/d/1yzQVsnacJmkkDLdFbIVg1pku6RxZDPawGTVBN6VrFro/edit"
+    - title: "ELK Presentation"
+      url: "https://docs.google.com/presentation/d/1vgDZZ4Dowhq2Uz-75WckPVtNkQJC2nACJuIQKQUgg8M/edit?slide=id.p#slide=id.p"
+    - title: "AI Control Presentation"
+      url: "https://docs.google.com/presentation/d/1HGu5h33bYITNOdQ7aQo0vwglnnRkL_jY7gK9SOKR5mA/edit?slide=id.gc6f980f91_0_0#slide=id.gc6f980f91_0_0"
+  additional_text: "• AI Safety Fundamentals 101 & 201 (Alignment Track)"

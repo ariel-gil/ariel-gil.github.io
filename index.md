@@ -52,6 +52,16 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
         {% endif %}
         <p>{{ project.description | markdownify }}</p>
+        {% if project.links %}
+        <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+            {% for link in project.links %}
+            {{ link.url | render_link_preview: link.title }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if project.additional_text %}
+        <p>{{ project.additional_text | markdownify }}</p>
+        {% endif %}
     </div>
     {% endfor %}
     
@@ -98,6 +108,16 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
             <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
             {% endif %}
             <p>{{ project.description | markdownify }}</p>
+            {% if project.links %}
+            <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+                {% for link in project.links %}
+                {{ link.url | render_link_preview: link.title }}
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if project.additional_text %}
+            <p>{{ project.additional_text | markdownify }}</p>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
@@ -174,6 +194,16 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
          <img src="{{ first_project.image }}" alt="{{ first_project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
          {% endif %}
          <p>{{ first_project.description | markdownify }}</p>
+         {% if first_project.links %}
+         <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+             {% for link in first_project.links %}
+             {{ link.url | render_link_preview: link.title }}
+             {% endfor %}
+         </div>
+         {% endif %}
+         {% if first_project.additional_text %}
+         <p>{{ first_project.additional_text | markdownify }}</p>
+         {% endif %}
      </div>
     
     <div class="toggle-container">
@@ -219,9 +249,19 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
              <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
              {% endif %}
              <p>{{ project.description | markdownify }}</p>
+             {% if project.links %}
+             <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+                 {% for link in project.links %}
+                 {{ link.url | render_link_preview: link.title }}
+                 {% endfor %}
+             </div>
+             {% endif %}
+             {% if project.additional_text %}
+             <p>{{ project.additional_text | markdownify }}</p>
+             {% endif %}
          </div>
          {% endfor %}
-    </div>
+     </div>
 </section>
 
 <!-- Image Modal -->

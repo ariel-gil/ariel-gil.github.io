@@ -13,6 +13,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Enable link previews
+link_previews: true
+
 # Exclude from processing
 exclude:
   - Gemfile
