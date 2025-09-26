@@ -1,4 +1,4 @@
----It 
+---
 layout: default
 title: Home
 description: AI Safety Researcher focusing on AI Risk management, standards and policy. Former medical robotics engineer.
@@ -59,23 +59,26 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="other-projects">
     <h3>Other Projects</h3>
-    <button id="toggle-other-projects" onclick="toggleOtherProjects()" style="
-        background: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 6px;
-        padding: 8px 16px;
-        cursor: pointer;
-        font-size: 14px;
-        color: #495057;
-        margin-bottom: 20px;
-        transition: all 0.2s ease;
-    " onmouseover="this.style.background='#e9ecef'" onmouseout="this.style.background='#f8f9fa'">
-        <span id="toggle-text">Click to view more projects</span>
-        <span id="toggle-arrow">▼</span>
-    </button>
     
-    <div id="other-projects-content" style="display: none;">
-        {% for project in site.data.other_projects %}
+    <!-- Show first project by default -->
+    {% assign first_project = site.data.other_projects.first %}
+    <div class="project">
+        <h4>{{ first_project.title }}</h4>
+        {% if first_project.image %}
+        <img src="{{ first_project.image }}" alt="{{ first_project.title }}" style="max-width: 300px; margin: 10px 0; border-radius: 8px;">
+        {% endif %}
+        <p>{{ first_project.description | markdownify }}</p>
+    </div>
+    
+    <div class="toggle-container">
+        <button id="toggle-other-projects" onclick="toggleOtherProjects()" class="toggle-button">
+            <span id="toggle-text">View more projects</span>
+            <span id="toggle-arrow">▼</span>
+        </button>
+    </div>
+    
+    <div id="other-projects-content" class="fade-content" style="display: none;">
+        {% for project in site.data.other_projects offset:1 %}
         <div class="project">
             <h4>{{ project.title }}</h4>
             {% if project.image %}
@@ -96,14 +99,31 @@ function toggleOtherProjects() {
     
     if (content.style.display === 'none') {
         content.style.display = 'block';
-        toggleText.textContent = 'Click to hide projects';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-10px)';
+        
+        // Trigger fade-in animation
+        setTimeout(() => {
+            content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+        }, 10);
+        
+        toggleText.textContent = 'Hide additional projects';
         toggleArrow.textContent = '▲';
-        button.style.background = '#e9ecef';
+        button.classList.add('active');
     } else {
-        content.style.display = 'none';
-        toggleText.textContent = 'Click to view more projects';
+        content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(-10px)';
+        
+        setTimeout(() => {
+            content.style.display = 'none';
+        }, 300);
+        
+        toggleText.textContent = 'View more projects';
         toggleArrow.textContent = '▼';
-        button.style.background = '#f8f9fa';
+        button.classList.remove('active');
     }
 }
 </script> 
