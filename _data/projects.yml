@@ -1,3 +1,6 @@
+- title: "AI Scheming Research"
+  description: "A small AI Scheming research project testing whether coding assistants will deceive clients to avoid implementing insecure code. This work explores the potential for AI systems to engage in deceptive behavior when faced with requests that could compromise security. [Project details](https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client)"
+
 - title: "AI Standards Lab"
   description: "Co-leading a nonprofit focused on supporting the development of standards and risk management frameworks for AI systems. We aim to bridge technical research with practical implementation work (translating research into a format suited for standards bodies). So far, we have focused on CEN-CENELEC JTC21 standards for the \"High-Risk\" systems in the AI Act, as well as the Codes of Practice."
 
