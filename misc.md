@@ -7,7 +7,7 @@ description: Personal hobbies and interests - hiking, biking, motorcycles, cars,
 {% for section in site.data.misc_sections %}
 <section id="{{ section.title | downcase | replace: ' ', '-' | replace: '&', '' }}">
     <h3>{{ section.title }}</h3>
-    <p>{{ section.description }}</p>
+    <p>{{ section.description | markdownify }}</p>
     
     {% if section.images %}
     <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
