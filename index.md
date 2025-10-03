@@ -161,7 +161,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="contact">
     <h3>Contact</h3>
-    <p>Feel free to reach out if you'd like to discuss AI safety, standards, or any of my projects:</p>
+    <p>Feel free to reach out if you'd like to discuss any of my projects, EU AI standards or anything else:</p>
     <p><a href="mailto:contact.arielgil@gmail.com">contact [dot] arielgil [at] gmail [dot] com</a></p>
 </section>
 
