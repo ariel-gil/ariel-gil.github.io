@@ -314,6 +314,32 @@
             transform: translateY(0);
         }
 
+        /* Contact section styling */
+        #contact {
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        #contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        #contact a {
+            font-weight: 500;
+            color: var(--link-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+            color: var(--heading-color);
+        }
+
 
         /* Add media query for small screens */
         @media (max-width: 600px) {
