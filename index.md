@@ -159,12 +159,6 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     </ul>
 </section>
 
-<section id="contact">
-    <h3>Contact</h3>
-    <p>Feel free to reach out if you'd like to discuss any of my projects, EU AI standards or anything else:</p>
-    <p><a href="mailto:contact.arielgil@gmail.com">contact [dot] arielgil [at] gmail [dot] com</a></p>
-</section>
-
 <section id="other-projects">
     <h3>Engineering Projects</h3>
     
@@ -273,6 +267,12 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
          </div>
          {% endfor %}
      </div>
+</section>
+
+<section id="contact">
+    <h3>Contact</h3>
+    <p>Feel free to reach out if you'd like to discuss any of my projects, EU AI standards or anything else:</p>
+    <p><a href="mailto:contact.arielgil@gmail.com">contact [dot] arielgil [at] gmail [dot] com</a></p>
 </section>
 
 <!-- Image Modal -->
