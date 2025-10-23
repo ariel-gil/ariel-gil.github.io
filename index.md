@@ -125,7 +125,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="current-projects">
     <h3>Current Projects</h3>
-    
+
     {% for project in site.data.projects %}
     <div class="project">
         <h4>{{ project.title }}</h4>
@@ -133,8 +133,6 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     </div>
     {% endfor %}
 </section>
-
-
 
 <section id="publications">
     <h3>Selected Publications and Papers</h3>
@@ -157,6 +155,24 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         </li>
         {% endfor %}
     </ul>
+</section>
+
+<section id="coding-projects">
+    <h3>Coding Projects</h3>
+
+    {% for project in site.data.coding_projects %}
+    <div class="project">
+        <h4>{{ project.title }}</h4>
+        <p>{{ project.description | markdownify }}</p>
+        {% if project.links %}
+        <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
+            {% for link in project.links %}
+            {{ link.url | render_link_preview: link.title }}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
 </section>
 
 <section id="other-projects">

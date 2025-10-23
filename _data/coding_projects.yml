@@ -1,0 +1,11 @@
+- title: "Tab Visualization in Browser"
+  description: "Browser extension/tool for visualizing and managing open tabs."
+  links:
+    - url: "https://github.com/ariel-gil/tab-visualization"
+      title: "GitHub Repository"
+
+- title: "Progressive Summarization MVP"
+  description: "Minimum viable product implementing progressive summarization techniques for note-taking and knowledge management."
+  links:
+    - url: "https://github.com/ariel-gil/progressive_summarization"
+      title: "GitHub Repository"
