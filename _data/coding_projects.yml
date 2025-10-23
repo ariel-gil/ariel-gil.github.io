@@ -1,11 +1,11 @@
-- title: "Tab Visualization in Browser"
-  description: "Browser extension/tool for visualizing and managing open tabs."
+- title: "Browser Tab Visualization"
+  description: "Browser extension for visualizing open tabs in several ways. Maybe wont be necessary once Agents get good, but I still hate scrolling through 100 tabs. The idea was to have several ways of simultaniously visualizing (and managing) tabs, possibly with a bit of AI but likely not needed. A bit inspired by Chrome 'journeys'. " 
   links:
     - url: "https://github.com/ariel-gil/tab-visualization"
       title: "GitHub Repository"
 
 - title: "Progressive Summarization MVP"
-  description: "Minimum viable product implementing progressive summarization techniques for note-taking and knowledge management."
+  description: "Tiago Forte's progressive summarization with LLM. Doesnt really work yet UI wise. It would be cool to run it on Cerberus with dynamic real time 'zooming in and out' of a document"
   links:
     - url: "https://github.com/ariel-gil/progressive_summarization"
       title: "GitHub Repository"
