@@ -34,7 +34,7 @@
     - "images/laser/large_905927_uftgofmtcx5fo7callxevawyg.jpg"
   
 - title: "Medical Robotics Startup (Forsight Robotics)"
-  description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within ~1 year. Worked on end effector, surgical tools, system integration, force-feedback joystick design, and ergonomics testing. Iterated Vision/tool-tip tracking requirements with CV team, and learned about challanges in ML risk management (even for simple non-closed loop tracking). Conducted usability studies comparing robotic vs manual surgery with surgeons."
+  description: "Early member (#4) of a semi-autonomous ophthalmic surgical robotics startup that grew to 50+ employees and raised $50M within ~1 year. Worked on end effector, surgical tools, system integration, force-feedback joystick design, and ergonomics testing. Iterated Vision/tool-tip tracking requirements with CV team, and learned about challenges in ML risk management (even for simple non-closed loop tracking). Conducted usability studies comparing robotic vs manual surgery with surgeons."
   images:
     - "images/large_905927_yvcws84zrhfqocnnlxsz2izid.jpg"
     - "images/large_905927_0tpja0uvxwtzeqdq4gconz3dr.png"
