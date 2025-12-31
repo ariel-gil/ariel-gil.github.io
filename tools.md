@@ -16,8 +16,8 @@ description:  Tools I use
         <li><strong>Snipd</strong> - good podcast app with Readwise/obsidian sync and AI summary features. I don't listen to podcasts that much, but I got the early adopter pricing.</li>
         <li><strong>Minimallist launcher</strong> on Android</li>
         <li><strong>"Intently" app</strong> for intentionality prompts. Might write a full post on it, this is a pretty awesome app that mostly removed my need for any other phone usage restrictions or weird experiments with eink phones.</li>
-        <li><strong>Edge browser</strong> - I liked firefox, but the vertical tabs in Edge are great. It's also ok-ish ram wise</li>
-        <li><strong>"Voice-in" browser extension</strong> for voice transcription to use in Claude etc</li>
+        <li><strong>Edge browser</strong> - I liked firefox, but the vertical tabs in Edge are great to use, giving a near fullscreen experience alll the time. It's also ok-ish ram wise. Extensions wise, I have Ublock Origin and Unhook (removes yt recommendations and feed).</li>
+        <li><strong>"Voice-in" browser extension</strong> for voice transcription to use in Claude etc. Though, Win11 has a pretty good native dictation feature, accessed by win+H, that I might switch to.</li>
         <li><strong>Dark Reader extension</strong> - I got used to dark mode, and this extension makes the entire web dark with pretty good customizations as well. I use -15 contrast, -20 brightness, though this is highly screen dependent</li>
         <li><strong>Todoist</strong> for task management - used to use Workflowy, but it doesn't work for me anymore. Todoist is mostly ok, though I am sure there's a better one.</li>
         <li><strong>Cursor and Claude code</strong> for light programming</li>
@@ -27,8 +27,8 @@ description:  Tools I use
     <ul>
         <li><strong>Dell Precision 5560</strong> - the engineer's version of the XPS15, sharing a chassis but housing a workstation grade GPU (RTX A2000 4GB). It's a great laptop, but it wasn't the most reliable. I got it in 2022, and my motherboard died 1.5 years in. Luckily, it was under warranty and replaced. Recently I swapped the battery and keyboard (some keys were intermittently failing), and it now feels fresh and ready for another few years. </li>
         <li><strong>Boox Nova Air (7.8in)</strong> - I really like eink. I've had this device since 2022 and it's still running great. I think the stylus experience is better than an iPad (without a paper-like screen protector), making it fun to write on. Form factor is best for books, and too small to read papers on comfortably without constantly squinting/zooming around. Might at some point get the larger one. It doesn't get security updates, but it has full android. So syncing EPUBs to it via google drive is easy.</li>
-        <li><strong>Anker GAN 65w charger</strong> - my Dell laptop charger is normally 130W, and super heavy. There's a slight clock speed penalty at 65W, but for my use case it's a great weight/size saving (~450g!).</li>
-        <li><strong>Alpine Musicsafe Pro earplugs</strong> - I do salsa, and also go to an occasional concert. My ears are pretty sensitive, and in general I don't want to lose any more of my hearing. These are good, though I think my old amazon bought cheap ones were more comfortable if I need to use them for sleep at a hostel.</li>
+        <li><strong>Otterbox GAN 65w charger</strong> - my laptop charger is 130W, and weighs 550g. There's a slight clock speed penalty at 65W, but for my use case it's a great weight/size saving (~450g!).</li>
+        <li><strong>Alpine Musicsafe Pro earplugs</strong> - I do salsa, and also go to an occasional concert. My ears are pretty sensitive, and in general I don't want to lose any more of my hearing. These are good, though I think my old amazon bought cheap concert plugs were more comfortable if I need to use them to filter out snoring at a hostel.</li>
         <li>That's it, mostly - I don't have that many things worth talking about here, as I have been travelling pretty light. Battery bank and some adapter cables are pretty standard travel items, as well as little organizer bags.</li> 
     </ul>
     
