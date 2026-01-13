@@ -30,10 +30,10 @@ _data/                   # YAML data files for dynamic content
 - **Projects data**: `_data/*.yml` files
 
 ## Common Tasks
-- Update position/title: Edit `_layouts/default.html` line 377
+- Update position/title: Edit `_layouts/default.html` (header-text section, ~line 377)
+- Update About text: Edit `index.md` (about section)
 - Add publication: Add entry to `_data/publications.yml`
 - Add project: Add entry to relevant `_data/*_projects.yml` file
-- Update About section: Edit `index.md` "about" section
 
 ## Build & Preview
 ```bash
