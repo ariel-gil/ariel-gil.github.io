@@ -1,3 +1,8 @@
+- title: "Discernment/Scalable Oversight (Paused)"
+  description: "I developed a technical research agenda (and also wrote a governance paper) testing the \"discernment problem\" - scalable oversight failures specifically when using AI systems to automate AI safety research. I think there's a chance we will hit this bottleneck soon, and it might make iterative alignment strategies less likely to work.
+
+  See my [governance preprint](https://www.researchgate.net/publication/391987459_When_Control_Succeeds_but_Discernment_Fails_Preparing_for_AI-Assisted_Safety_Research) and my [Reflection Testing agenda on LessWrong](https://www.lesswrong.com/posts/wbbD3rNuqjxAcuKEn/agenda-reflection-testing-automated-alignment). This project is currently paused."
+
 - title: "Scheming Detection Environment (Sept 2025)"
   description: "Empirical research project testing whether coding assistants will 'benevolently deceive' clients to avoid implementing insecure code. I tried to set up a somewhat realistic toy environment for iterating monitors, using a 3-turn conversation. [Project Details on LessWrong](https://www.lesswrong.com/posts/rQWHwazYsBi97jMBg/scheming-toy-environment-incompetent-client)"
   images:

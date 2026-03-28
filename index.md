@@ -8,7 +8,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     <h3>About Me</h3>
     <p>I work on both Technical AI Safety and Governance, with a focus on AI Control and failure modes of automated alignment. In 2023, I co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice, funded at $1M+. The Lab was a key contributor to the final GPAI Code of Practice. I've since transitioned to an advisory/board role to focus on technical research, now as Technical Research Manager at Pivotal Research.</p>
         
-    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My governance work is informed by engineering risk management experience and technical AI safety research. Currently focused on technical safety research and governance for near-term AI risks.</p>
+    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My governance work is informed by engineering risk management experience and technical AI safety research. Currently interested in making automated alignment go well (or pausing before it fails), as well as training new researchers in the AI Agent era.</p>
     
     <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>, or below.</p>
 </section>
@@ -121,17 +121,6 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
         </div>
         {% endfor %}
     </div>
-</section>
-
-<section id="current-projects">
-    <h3>Current Projects</h3>
-
-    {% for project in site.data.projects %}
-    <div class="project">
-        <h4>{{ project.title }}</h4>
-        <p>{{ project.description | markdownify }}</p>
-    </div>
-    {% endfor %}
 </section>
 
 <section id="publications">
