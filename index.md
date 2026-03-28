@@ -6,9 +6,9 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="about">
     <h3>About Me</h3>
-    <p>I work on both Technical AI Safety and Governance, currently interested in AI Control and predicting failures of "Automated Alignment". In 2023, I co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice - which has been funded at $600k+, and was a key player in the success of the final CoP. I've transitioned to an advisory/board role to focus on technical research, now as Technical Research Manager at Pivotal Research.</p>
+    <p>I work on both Technical AI Safety and Governance, with a focus on AI Control and failure modes of automated alignment. In 2023, I co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice, funded at $1M+. The Lab was a key contributor to the final GPAI Code of Practice. I've since transitioned to an advisory/board role to focus on technical research, now as Technical Research Manager at Pivotal Research.</p>
         
-    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My AI governance work is informed by my risk management experience, as well as technical/conceptual AI safety knowledge I've picked up along the way. Currently, I am exploring technical work, as well as governance for shorter timelines. </p>
+    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My governance work is informed by engineering risk management experience and technical AI safety research. Currently focused on technical safety research and governance for near-term AI risks.</p>
     
     <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>, or below.</p>
 </section>
@@ -157,24 +157,6 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     </ul>
 </section>
 
-<section id="coding-projects">
-    <h3>Coding Projects</h3>
-
-    {% for project in site.data.coding_projects %}
-    <div class="project">
-        <h4>{{ project.title }}</h4>
-        <p>{{ project.description | markdownify }}</p>
-        {% if project.links %}
-        <div class="link-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
-            {% for link in project.links %}
-            {{ link.url | render_link_preview: link.title }}
-            {% endfor %}
-        </div>
-        {% endif %}
-    </div>
-    {% endfor %}
-</section>
-
 <section id="other-projects">
     <h3>Engineering Projects</h3>
     
@@ -287,7 +269,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 
 <section id="contact">
     <h3>Contact</h3>
-    <p>Feel free to reach out if you'd like to discuss any of my projects, EU AI standards or anything else:</p>
+    <p>Feel free to reach out if you'd like to discuss any of my projects, AI safety, governance, or anything else:</p>
     <p><a href="mailto:contact.arielgil@gmail.com">contact [dot] arielgil [at] gmail [dot] com</a></p>
 </section>
 
