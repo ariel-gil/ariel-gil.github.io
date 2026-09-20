@@ -12,7 +12,7 @@ description: Personal hobbies and interests - hiking, biking, motorcycles, cars,
     {% if section.images %}
     <div class="image-gallery" style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap;">
         {% for img in section.images %}
-        <img src="{{ img }}" alt="{{ section.title }}" 
+        <img src="{{ img }}" alt="{{ section.title }}" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
              onclick="openImageModal('{{ img }}', '{{ section.title }}')"
              style="max-width: 200px; height: 150px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
              onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
@@ -24,16 +24,18 @@ description: Personal hobbies and interests - hiking, biking, motorcycles, cars,
 {% endfor %}
 
 <!-- Image Modal -->
-<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); cursor: pointer;" onclick="closeImageModal()">
+<div id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); cursor: pointer;" onclick="closeImageModal()">
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90%;">
         <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
         <div id="modalCaption" style="color: white; text-align: center; margin-top: 10px; font-size: 16px; font-weight: bold;"></div>
     </div>
-    <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeImageModal()">&times;</span>
+    <button type="button" id="closeImageModalButton" aria-label="Close image" style="background: transparent; border: 0; position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeImageModal()">&times;</button>
 </div>
 
 <script>
+let imageModalTrigger = null;
 function openImageModal(imageSrc, imageTitle) {
+    imageModalTrigger = document.activeElement;
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
@@ -41,6 +43,7 @@ function openImageModal(imageSrc, imageTitle) {
     modal.style.display = 'block';
     modalImg.src = imageSrc;
     modalCaption.textContent = imageTitle;
+    document.getElementById('closeImageModalButton').focus();
     
     // Prevent body scrolling when modal is open
     document.body.style.overflow = 'hidden';
@@ -48,7 +51,9 @@ function openImageModal(imageSrc, imageTitle) {
 
 function closeImageModal() {
     const modal = document.getElementById('imageModal');
+    if (modal.style.display === 'none') return;
     modal.style.display = 'none';
+    if (imageModalTrigger) imageModalTrigger.focus();
     
     // Restore body scrolling
     document.body.style.overflow = 'auto';
@@ -56,6 +61,10 @@ function closeImageModal() {
 
 // Close modal when pressing Escape key
 document.addEventListener('keydown', function(event) {
+    if (event.key === 'Tab' && document.getElementById('imageModal').style.display !== 'none') {
+        event.preventDefault();
+        document.getElementById('closeImageModalButton').focus();
+    }
     if (event.key === 'Escape') {
         closeImageModal();
     }

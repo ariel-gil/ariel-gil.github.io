@@ -29,8 +29,8 @@ module Jekyll
       image_path = "link_previews/#{safe_filename}.jpg"
       
       <<~HTML
-        <div class="link-preview" onclick="window.open('#{url}', '_blank')" 
-             style="max-width: 300px; height: 200px; background: var(--container-bg); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; overflow: hidden; transition: all 0.2s ease; margin: 10px 0;"
+        <a class="link-preview" href="#{url}" target="_blank" rel="noopener noreferrer"
+             style="display: block; text-decoration: none; color: inherit; max-width: 300px; height: 200px; background: var(--container-bg); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; overflow: hidden; transition: all 0.2s ease; margin: 10px 0;"
              onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
              onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='scale(1)'">
           #{preview['image'] ? "<img src=\"#{image_path}\" alt=\"#{preview['title'] || 'Link Preview'}\" style=\"width: 100%; height: 120px; object-fit: cover;\">" : ""}
@@ -39,15 +39,15 @@ module Jekyll
             <p style="margin: 0; color: var(--subheading-color); font-size: 12px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">#{preview['description'] || ''}</p>
             <div style="margin-top: 8px; font-size: 10px; color: var(--link-color); text-transform: uppercase; letter-spacing: 0.5px;">#{URI.parse(url).host}</div>
           </div>
-        </div>
+        </a>
       HTML
     end
 
     def render_fallback_link(url, title = nil)
       domain = URI.parse(url).host rescue url
       <<~HTML
-        <div class="link-preview-fallback" onclick="window.open('#{url}', '_blank')" 
-             style="max-width: 300px; height: 80px; background: var(--container-bg); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; display: flex; align-items: center; padding: 12px; transition: all 0.2s ease; margin: 10px 0;"
+        <a class="link-preview-fallback" href="#{url}" target="_blank" rel="noopener noreferrer"
+             style="display: block; text-decoration: none; color: inherit; max-width: 300px; height: 80px; background: var(--container-bg); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; display: flex; align-items: center; padding: 12px; transition: all 0.2s ease; margin: 10px 0;"
              onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
              onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='scale(1)'">
           <div style="flex: 1;">
@@ -55,7 +55,7 @@ module Jekyll
             <div style="font-size: 12px; color: var(--link-color); text-transform: uppercase; letter-spacing: 0.5px;">#{domain}</div>
           </div>
           <div style="font-size: 20px; color: var(--link-color); margin-left: 12px;">↗</div>
-        </div>
+        </a>
       HTML
     end
   end

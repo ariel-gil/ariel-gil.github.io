@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Home
-description: AI Safety Researcher focusing on AI Risk management, standards and policy. Former medical robotics engineer.
+title: Ariel Gil - AI Safety Research
+description: Senior Research Manager at Pivotal Research, interested in hardware verification, AI control, and automated alignment. Former medical robotics engineer.
 ---
 
 <section id="about">
     <h3>About Me</h3>
-    <p>I work on both Technical AI Safety and Governance, with a focus on AI Control and failure modes of automated alignment. In 2023, I co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice, funded at $1M+. The Lab was a key contributor to the final GPAI Code of Practice. I've since transitioned to an advisory/board role to focus on technical research, now as Technical Research Manager at Pivotal Research.</p>
+    <p>I'm Senior Research Manager at Pivotal Research, with an interest in hardware verification, AI control, and automated alignment. In 2023, I co-founded the <a href="https://ai-standards-lab.org/" target="_blank">AI Standards Lab</a>, a 501(c)(3) supporting EU standards and the recent Codes of Practice, funded at $1M+. The Lab was a key contributor to the final GPAI Code of Practice. I've since transitioned to an advisory/board role to focus on technical research.</p>
         
-    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My governance work is informed by engineering risk management experience and technical AI safety research. Currently interested in making automated alignment go well (or pausing before it fails), as well as training new researchers in the AI Agent era.</p>
+    <p>Originally a Mechatronics Engineer, I was an early team member of a semi-autonomous ophthalmic surgical robotics startup that raised $50M and grew to 50+ employees. Later, I worked in ML-based ultrasound diagnostics and laser eye-floater treatment. My governance work is informed by engineering risk management experience and technical AI safety research. I'm also interested in training new researchers in the AI agent era.</p>
     
     <p>In my free time, I mountain bike, rock climb, hike, and dance salsa (when not injured!). I also do occasional small design projects and 3D printing. You can see some of my previous engineering projects in <a href="https://www.coroflot.com/ArielGil" target="_blank">my design portfolio</a>, or below.</p>
 </section>
@@ -26,13 +26,13 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
             {% if img contains '.pdf' %}
             {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
             {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
-            <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+            <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                  onclick="openPdf('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+            <div role="button" tabindex="0" aria-label="Open {{ project.title | escape }} PDF" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openPdf('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
@@ -40,7 +40,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                 <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
             </div>
             {% else %}
-            <img src="{{ img }}" alt="{{ project.title }}" 
+            <img src="{{ img }}" alt="{{ project.title }}" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                  onclick="openImageModal('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
@@ -66,7 +66,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     {% endfor %}
     
     <div class="toggle-container">
-        <button id="toggle-ai-safety-projects" onclick="toggleAiSafetyProjects()" class="toggle-button">
+        <button id="toggle-ai-safety-projects" onclick="toggleAiSafetyProjects()" aria-expanded="false" aria-controls="ai-safety-projects-content" class="toggle-button">
             <span id="toggle-ai-safety-text">View more projects</span>
             <span id="toggle-ai-safety-arrow">▼</span>
         </button>
@@ -82,13 +82,13 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                 {% if img contains '.pdf' %}
                 {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
                 {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
-                <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+                <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                      onclick="openPdf('{{ img }}', '{{ project.title }}')"
                      style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                      onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                <div role="button" tabindex="0" aria-label="Open {{ project.title | escape }} PDF" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openPdf('{{ img }}', '{{ project.title }}')"
                      style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                      onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
@@ -96,7 +96,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                     <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
                 </div>
                 {% else %}
-                <img src="{{ img }}" alt="{{ project.title }}" 
+                <img src="{{ img }}" alt="{{ project.title }}" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                      onclick="openImageModal('{{ img }}', '{{ project.title }}')"
                      style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                      onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
@@ -137,6 +137,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                 {% else %}
                 <span class="pub-title">{{ pub.title }}</span>
                 {% endif %}
+                <span class="pub-authors">{{ pub.authors }} ({{ pub.year }})</span>
                 {% if pub.meta %}
                 <span class="pub-meta">{{ pub.meta }}</span>
                 {% endif %}
@@ -159,13 +160,13 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
             {% if img contains '.pdf' %}
             {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
             {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
-            <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+            <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                  onclick="openPdf('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+            <div role="button" tabindex="0" aria-label="Open {{ project.title | escape }} PDF" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openPdf('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                  onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
@@ -173,7 +174,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                 <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
             </div>
             {% else %}
-            <img src="{{ img }}" alt="{{ project.title }}" 
+            <img src="{{ img }}" alt="{{ project.title }}" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                  onclick="openImageModal('{{ img }}', '{{ project.title }}')"
                  style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                  onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
@@ -199,7 +200,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
     {% endfor %}
     
     <div class="toggle-container">
-        <button id="toggle-other-projects" onclick="toggleOtherProjects()" class="toggle-button">
+        <button id="toggle-other-projects" onclick="toggleOtherProjects()" aria-expanded="false" aria-controls="other-projects-content" class="toggle-button">
             <span id="toggle-text">View more projects</span>
             <span id="toggle-arrow">▼</span>
         </button>
@@ -215,13 +216,13 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                  {% if img contains '.pdf' %}
                  {% assign pdf_filename = img | split: '/' | last | split: '.' | first %}
                  {% assign preview_path = 'pdf_previews/' | append: pdf_filename | append: '_preview.jpg' %}
-                 <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" 
+                 <img src="{{ preview_path }}" alt="{{ project.title }} PDF Preview" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                       onclick="openPdf('{{ img }}', '{{ project.title }}')"
                       style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                       onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                       onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'"
                       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                 <div onclick="openPdf('{{ img }}', '{{ project.title }}')"
+                 <div role="button" tabindex="0" aria-label="Open {{ project.title | escape }} PDF" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openPdf('{{ img }}', '{{ project.title }}')"
                       style="max-width: 150px; height: 100px; background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 6px; cursor: pointer; display: none; flex-direction: column; align-items: center; justify-content: center; transition: all 0.2s ease;"
                       onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
                       onmouseout="this.style.borderColor='#e9ecef'; this.style.transform='scale(1)'">
@@ -229,7 +230,7 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
                      <div style="font-size: 10px; text-align: center; color: #666;">PDF</div>
                  </div>
                  {% else %}
-                 <img src="{{ img }}" alt="{{ project.title }}" 
+                 <img src="{{ img }}" alt="{{ project.title }}" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
                       onclick="openImageModal('{{ img }}', '{{ project.title }}')"
                       style="max-width: 150px; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid #e9ecef; transition: all 0.2s ease;"
                       onmouseover="this.style.borderColor='#007bff'; this.style.transform='scale(1.02)'"
@@ -263,12 +264,12 @@ description: AI Safety Researcher focusing on AI Risk management, standards and 
 </section>
 
 <!-- Image Modal -->
-<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); cursor: pointer;" onclick="closeImageModal()">
+<div id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); cursor: pointer;" onclick="closeImageModal()">
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90%;">
         <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
         <div id="modalCaption" style="color: white; text-align: center; margin-top: 10px; font-size: 16px; font-weight: bold;"></div>
     </div>
-    <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeImageModal()">&times;</span>
+    <button type="button" id="closeImageModalButton" aria-label="Close image" style="background: transparent; border: 0; position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeImageModal()">&times;</button>
 </div>
 
 <script>
@@ -293,6 +294,7 @@ function toggleOtherProjects() {
         toggleText.textContent = 'Hide additional projects';
         toggleArrow.textContent = '▲';
         button.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
     } else {
         content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         content.style.opacity = '0';
@@ -305,6 +307,7 @@ function toggleOtherProjects() {
         toggleText.textContent = 'View more projects';
         toggleArrow.textContent = '▼';
          button.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
      }
  }
 
@@ -329,6 +332,7 @@ function toggleAiSafetyProjects() {
         toggleText.textContent = 'Hide additional projects';
         toggleArrow.textContent = '▲';
         button.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
     } else {
         content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         content.style.opacity = '0';
@@ -341,10 +345,13 @@ function toggleAiSafetyProjects() {
         toggleText.textContent = 'View more projects';
         toggleArrow.textContent = '▼';
         button.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
     }
 }
 
+let imageModalTrigger = null;
 function openImageModal(imageSrc, imageTitle) {
+    imageModalTrigger = document.activeElement;
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
@@ -352,6 +359,7 @@ function openImageModal(imageSrc, imageTitle) {
     modal.style.display = 'block';
     modalImg.src = imageSrc;
     modalCaption.textContent = imageTitle;
+    document.getElementById('closeImageModalButton').focus();
     
     // Prevent body scrolling when modal is open
     document.body.style.overflow = 'hidden';
@@ -364,7 +372,9 @@ function openPdf(pdfSrc, pdfTitle) {
 
 function closeImageModal() {
     const modal = document.getElementById('imageModal');
+    if (modal.style.display === 'none') return;
     modal.style.display = 'none';
+    if (imageModalTrigger) imageModalTrigger.focus();
     
     // Restore body scrolling
     document.body.style.overflow = 'auto';
@@ -372,6 +382,10 @@ function closeImageModal() {
 
 // Close modal when pressing Escape key
 document.addEventListener('keydown', function(event) {
+    if (event.key === 'Tab' && document.getElementById('imageModal').style.display !== 'none') {
+        event.preventDefault();
+        document.getElementById('closeImageModalButton').focus();
+    }
     if (event.key === 'Escape') {
         closeImageModal();
     }

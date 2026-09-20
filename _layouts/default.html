@@ -209,8 +209,19 @@
             color: var(--heading-color);
         }
         
+        :focus-visible {
+            outline: 3px solid var(--link-color);
+            outline-offset: 4px;
+        }
+
+        ul.publications .pub-authors {
+            display: block;
+            font-size: 0.9em;
+            margin-top: 0.25em;
+        }
+
         ul.publications .pub-meta {
-            color: #888;
+            color: var(--subheading-color);
             font-size: 0.95em;
             margin-left: 0.3em;
         }
@@ -374,7 +385,7 @@
             <div class="header-text">
                 <h1>Ariel Gil</h1>
                 <h2>AI Safety Researcher & Mechatronics Engineer</h2>
-                <p>Technical Research Manager at Pivotal Research</p>
+                <p>Senior Research Manager at Pivotal Research</p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/ariel-gil/" target="_blank" aria-label="Connect with Ariel on LinkedIn">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
